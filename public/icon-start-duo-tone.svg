@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="80.64" y1="0" x2="80.64" y2="318.937" id="gradient-0" gradientTransform="matrix(0.281729, -0.491248, 0.581819, 0.333671, -59.032802, 202.956599)">
+      <stop offset="0" style="stop-color: rgb(35, 0, 255);"/>
+      <stop offset="1" style="stop-color: rgb(14, 0, 65);"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1.003329, 0, 0)">
+    <g transform="matrix(0.99561, 0, 0, 1, 1.565384, 0)">
+      <rect width="161.28" height="318.937" style="stroke-width: 0.973; mix-blend-mode: hard-light; fill: url(&quot;#gradient-0&quot;);"/>
+    </g>
+    <path d="M -225.71 -451.38 L -0.008 -226.092 L -225.71 -226.092 L -225.71 -451.38 Z" bx:shape="triangle -225.71 -451.38 225.702 225.288 0 0 1@2b3a4a82" style="mix-blend-mode: hard-light; fill: rgb(35, 0, 255); stroke-dashoffset: -22px; stroke-width: 0px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-0.70954, -0.704665, 0.709557, -0.704682, 272.858693, 497.633613)"/>
+    <path d="M -224.62 -449.21 L -0.007 -225.009 L -224.62 -225.009 L -224.62 -449.21 Z" bx:shape="triangle -224.62 -449.21 224.613 224.201 0 0 1@f5674bf8" style="mix-blend-mode: hard-light; stroke-width: 50px; fill: none; transform-origin: -112.31px -337.11px;" transform="matrix(-0.70954, -0.704665, 0.709557, -0.704682, 272.539625, 497.912972)"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -0.401143, -1.994948)" style="mix-blend-mode: hard-light;"/>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="576.667" y1="9.428" x2="576.667" y2="320.096" id="gradient-3" gradientTransform="matrix(0.226764, -1.03636, 0.35022, 0.108633, 246.530081, 751.574938)">
+      <stop offset="0" style="stop-color: rgb(40, 99, 236);"/>
+      <stop offset="1" style="stop-color: rgb(7, 6, 30);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="659.048" y1="0" x2="659.048" y2="329.529" id="gradient-2" gradientTransform="matrix(0.773898, 0.633461, -0.611017, 1.32487, 123.49748, -435.075672)">
+      <stop offset="0" style="stop-color: rgb(43, 104, 247);"/>
+      <stop offset="1" style=""/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(0.993307, 0, 0, 1.007496, -331.169037, 9.798677)" style="transform-origin: 331.169px -9.79868px;">
+    <path d="M 331.169 154.218 C 331.169 245.214 404.935 319.313 495.93 319.725 C 586.926 320.137 660.691 246.706 660.691 155.71 C 660.691 64.716 586.926 -9.385 495.93 -9.797 C 404.935 -10.209 331.169 63.223 331.169 154.218 Z" style="stroke-width: 20; fill: url(&quot;#gradient-3&quot;); transform-origin: 495.93px 154.964px;"/>
+    <path d="M 500.644 319.732 L 665.406 319.732 L 665.406 -9.797 L 500.644 -9.797 L 500.644 319.732 Z" style="stroke-width: 20; fill: url(&quot;#gradient-2&quot;); transform-origin: 583.025px 154.967px;" transform="matrix(-1, 0, 0, -1, -0.000022, 0.000029)"/>
+  </g>
+</svg>

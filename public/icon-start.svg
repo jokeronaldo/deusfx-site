@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="906.191" y1="0" x2="906.191" y2="329.524" id="gradient-4" gradientTransform="matrix(-0.788483, -0.567722, 0.42449, -0.977517, 729.420019, 814.464905)">
+      <stop offset="0" style="stop-color: rgb(18, 12, 54);"/>
+      <stop offset="1" style="stop-color: rgb(40, 99, 236);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-105.276" y1="-421.09" x2="-105.276" y2="-210.925" id="gradient-0" gradientTransform="matrix(0.95538, 0.479961, -0.544928, 1.076873, -241.443872, 53.797088)">
+      <stop offset="0" style="stop-color: #bada55"/>
+      <stop offset="1" style="stop-color: #758d29"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-105.276" y1="-421.09" x2="-105.276" y2="-210.925" id="gradient-3" gradientTransform="matrix(0.629634, 0.629594, -0.622562, 0.622522, -314.733228, -6.427389)">
+      <stop offset="0" style="stop-color: rgb(3, 6, 14);"/>
+      <stop offset="1" style="stop-color: rgb(49, 98, 228);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-175" y1="-32.861" x2="-175" y2="267.139" id="gradient-1" gradientTransform="matrix(0.50957, 0.807914, -0.395428, 0.288477, 224.93368, 170.633527)">
+      <stop offset="0" style="stop-color: rgb(100% 100% 100%)"/>
+      <stop offset="1" style="stop-color: rgb(145, 145, 145); stop-opacity: 0;"/>
+    </linearGradient>
+  </defs>
+  <rect width="161.28" height="318.937" style="fill: url(&quot;#gradient-4&quot;); stroke-width: 0.973; mix-blend-mode: hard-light;"/>
+  <path d="M -225.12 -450.19 L -0.008 -225.5 L -225.12 -225.5 L -225.12 -450.19 Z" bx:shape="triangle -225.12 -450.19 225.112 224.69 0 0 1@ee42ec27" style="fill: rgb(216, 216, 216); stroke: url(&quot;#gradient-0&quot;); transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 1.069; mix-blend-mode: hard-light;" transform="matrix(-0.711089, -0.703102, 0.711134, -0.703147, 272.639074, 498.649556)"/>
+  <path d="M -225.12 -450.19 L -0.008 -225.5 L -225.12 -225.5 L -225.12 -450.19 Z" bx:shape="triangle -225.12 -450.19 225.112 224.69 0 0 1@ee42ec27" style="stroke-width: 1.069; fill: url(&quot;#gradient-3&quot;); transform-origin: -112.56px -337.846px; mix-blend-mode: hard-light;" transform="matrix(-0.711089, -0.703102, 0.711134, -0.703147, 272.629962, 498.648813)"/>
+  <g transform="matrix(1, 0, 0, 1, -0.401143, -1.994948)" style="mix-blend-mode: hard-light;">
+    <rect width="135.416" height="307.243" style="stroke-width: 0.973; fill: url(&quot;#gradient-1&quot;); mix-blend-mode: hard-light; opacity: 0.7;" y="12.757" x="13.337"/>
+  </g>
+</svg>

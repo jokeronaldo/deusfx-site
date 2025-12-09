@@ -1,0 +1,56 @@
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+@layer reset, base, components, utilities, layout, layout-navbar, layout-prose, layout-content;
+
+@layer layout {
+  * {
+    box-sizing: border-box !important;
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+  }
+
+  .force-gpu {
+    /* Force all elements to be GPU rendered */
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  *::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  *::-webkit-scrollbar-track:hover {
+    background-color: rgba(0, 0, 0, 0.356);
+  }
+
+  *::-webkit-scrollbar-track:active {
+    background-color: #00000010;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(9, 0, 128);
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: blue;
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" xmlns:bx="https://boxy-svg.com">
+  <path d="M -329.51 -329.52 L 0.004 0.004 L -329.51 0.004 L -329.51 -329.52 Z" bx:shape="triangle -329.51 -329.52 329.514 329.524 0 0 1@7ea5655f" style="stroke-linecap: square; paint-order: fill; stroke-width: 36.042; stroke-miterlimit: 1; fill: url(&quot;#gradient-1&quot;);" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+  <path d="M 0.01 -329.52 L 329.524 0.004 L 0.01 0.004 L 0.01 -329.52 Z" bx:shape="triangle 0.01 -329.52 329.514 329.524 0 0 1@1d25ad48" style="stroke-linecap: square; stroke-width: 36.042; stroke-miterlimit: 1; fill: url(&quot;#gradient-0&quot;); paint-order: fill;" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+  <defs>
+    <bx:grid x="0" y="0" width="82.381" height="82.381"/>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="164.767" y1="-329.52" x2="164.767" y2="0.004" id="gradient-0" gradientTransform="matrix(0.738149, 0.674637, -0.5, 0.5, -121.620708, -111.159915)" spreadMethod="pad">
+      <stop offset="0" style="stop-color: rgb(17.255% 41.961% 100%)"/>
+      <stop offset="1" style="stop-color: rgb(0, 20, 40);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-164.753" y1="-329.52" x2="-164.753" y2="0.004" id="gradient-1" gradientTransform="matrix(0.973014, -0.230749, 0.25, 0.75, -86.837015, -120.400531)">
+      <stop offset="0" style="stop-color: rgb(71, 42, 170);"/>
+      <stop offset="1" style="stop-color: rgb(0, 2, 14);"/>
+    </linearGradient>
+  </defs>
+</svg>

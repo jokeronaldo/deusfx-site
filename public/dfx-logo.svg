@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com" width="224px" height="72px" viewBox="0 0 224 72">
+  <rect y="0.06" width="36.273" height="72.335" style="fill: rgba(255, 29, 0, 0.75);"/>
+  <defs>
+    <bx:grid x="0" y="0" width="24.877" height="24.162"/>
+  </defs>
+  <rect x="77.536" y="0.06" width="36.273" height="72.335" style="stroke-width: 1; fill: rgba(0, 5, 255, 0.62);"/>
+  <path d="M 127.5 3.041 Q 127.536 3.003 127.572 3.041 L 163.737 40.513 Q 163.773 40.551 163.701 40.551 L 91.371 40.551 Q 91.299 40.551 91.335 40.513 Z" bx:shape="triangle 91.299 3.003 72.474 37.548 0.5 0.001 1@5574f901" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, -72.401848, 14.486359)"/>
+  <path d="M 33.079 36.454 L 104.968 108.343 L 33.079 108.343 L 33.079 36.454 Z" bx:shape="triangle 33.079 36.454 71.889 71.889 0 0 1@46a1520c" style="fill: rgb(194, 216, 6); stroke-width: 1; transform-origin: 69.024px 72.398px;" transform="matrix(0, 1, -1, 0, 121.986649, -36.394188)"/>
+  <path d="M -227.02 0.065 L -155.131 71.954 L -227.02 71.954 L -227.02 0.065 Z" bx:shape="triangle -227.02 0.065 71.889 71.889 0 0 1@84ce7cea" style="stroke-width: 1; fill: rgb(0, 216, 189); transform-origin: -191.078px 36.009px;" transform="matrix(-1, 0, 0, 1, 382.156982, 0)"/>
+  <path d="M -33.079 -36.454 L 38.81 35.435 L -33.079 35.435 L -33.079 -36.454 Z" bx:shape="triangle -33.079 -36.454 71.889 71.889 0 0 1@7fc98995" style="stroke-width: 1; fill: rgb(19, 117, 216); transform-origin: 2.865px -0.51px;" transform="matrix(0, 1, 1, 0, 188.141847, 36.513766)"/>
+  <rect x="70.498" y="-4.593" width="36.273" height="72.335" style="stroke-width: 1; fill: rgba(0, 255, 118, 0.62); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, 25.532304, -13.438107)"/>
+  <rect x="70.498" y="-4.593" width="36.273" height="72.335" style="stroke-width: 1; fill: rgb(8, 0, 203); transform-origin: 88.635px 31.575px;" transform="matrix(0, 1, -1, 0, 25.533457, 6.989481)"/>
+</svg>

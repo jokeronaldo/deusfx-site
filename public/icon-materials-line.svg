@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" xmlns:bx="https://boxy-svg.com">
+  <g>
+    <path d="M -319.98 -320 L 0.006 0 L -319.98 0 L -319.98 -320 Z" bx:shape="triangle -319.98 -320 319.986 320 0 0 1@e8092a37" style="stroke-linecap: square; paint-order: fill; stroke-miterlimit: 1; fill: none; stroke-width: 5px;" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+    <path d="M 320 320 L 0 320 L 0 0 L 320 320 Z M 4.87 315.13 L 308.243 315.13 L 4.87 11.758 L 4.87 315.13 Z" style="fill: rgb(61, 61, 255); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000067, 0.000016)"/>
+    <path d="M 0 -320 L 320 0 L 0 0 L 0 -320 Z" bx:shape="triangle 0 -320 320 320 0 0 1@94fa6d03" style="fill: none; stroke-width: 5px;" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+    <path d="M 320 0 L 0 0 L 0 320 L 320 0 Z M 4.87 4.87 L 308.242 4.87 L 4.87 308.242 L 4.87 4.87 Z" style="fill: rgb(61, 61, 255);"/>
+  </g>
+  <defs>
+    <bx:grid x="0" y="0" width="82.381" height="82.381"/>
+  </defs>
+</svg>

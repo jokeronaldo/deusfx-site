@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" xmlns:bx="https://boxy-svg.com">
+  <path d="M -319.98 -320 L 0.006 0 L -319.98 0 L -319.98 -320 Z" bx:shape="triangle -319.98 -320 319.986 320 0 0 1@e8092a37" style="stroke-linecap: square; paint-order: fill; stroke-width: 36.042; stroke-miterlimit: 1; fill: url(&quot;#gradient-0&quot;);" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+  <defs>
+    <bx:grid x="0" y="0" width="82.381" height="82.381"/>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-159.987" y1="-320" x2="-159.987" y2="0" id="gradient-0" gradientTransform="matrix(0.817754, -0.575569, 0.325763, 0.514881, -68.604862, -174.464559)">
+      <stop offset="0" style="stop-color: rgb(78, 0, 255);"/>
+      <stop offset="1" style="stop-color: rgb(4, 0, 17);"/>
+    </linearGradient>
+  </defs>
+  <path d="M 0 -320 L 320 0 L 0 0 L 0 -320 Z" bx:shape="triangle 0 -320 320 320 0 0 1@94fa6d03" style="stroke: rgb(0, 0, 0); fill: rgb(35, 0, 255);" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+</svg>

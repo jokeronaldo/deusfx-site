@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="0" y="0" width="82.381" height="82.381"/>
+  </defs>
+  <path d="M 0 -320 L 320 0 L 0 0 L 0 -320 Z" bx:shape="triangle 0 -320 320 320 0 0 1@94fa6d03" style="stroke: rgb(0, 0, 0); fill: rgb(35, 0, 255);" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+  <path d="M 319.975 319.957 L 170 169.975 L 319.975 20 L 319.975 319.957 Z" style="stroke-linecap: square; paint-order: fill; stroke-width: 36.042; stroke-miterlimit: 1; fill: rgb(35, 0, 255);"/>
+</svg>

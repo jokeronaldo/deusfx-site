@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 102" xmlns:bx="https://boxy-svg.com" width="102px" height="102px">
+  <defs>
+    <bx:grid x="141.234" y="300.84" width="100" height="100"/>
+  </defs>
+  <path d="M 1 51 C 1 23.4 23.4 1 51 1 L 51 51 L 1 51 Z" style="vector-effect: non-scaling-stroke; stroke: rgb(255, 255, 255); fill: rgba(255, 255, 255, 0); stroke-width: 1; transform-origin: 25.97px 25.98px; paint-order: stroke;" id="pizza" class="pizza"/>
+</svg>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 102" xmlns:bx="https://boxy-svg.com" width="102px" height="102px">
+  <defs>
+    <bx:grid x="141.234" y="300.84" width="100" height="100"/>
+  </defs>
+  <path d="M 101 51 A 50 50 0 0 1 51 101 A 50 50 0 0 1 1 51 A 50 50 0 0 1 51 1 A 50 50 0 0 1 101 51 Z" style="stroke: rgb(255, 255, 255); stroke-linejoin: round; vector-effect: non-scaling-stroke; transform-origin: 51px 51px; fill: rgba(190, 190, 190, 0); paint-order: fill;" id="circle" class="circle"/>
+</svg>

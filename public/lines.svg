@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 402 402" width="402px" height="402px" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="141.234" y="300.84" width="100" height="100"/>
+  </defs>
+  <path d="M 0 0 L 399.999 399.998 L 0 399.998 L 0 0 Z" bx:shape="triangle 0 0 399.999 399.998 0 0 1@8eb2bb55" style="fill: none; stroke: rgb(255, 255, 255); transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 5px;" id="triangle" class="triangle"/>
+  <rect width="400" height="399.998" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 5px;" id="retangle" class="retangle"/>
+  <ellipse style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 5px;" cx="200" cy="200" rx="200" ry="199.999" id="circle" class="circle"/>
+  <path d="M 0 400 C 0 179.086 179.084 0 400 0 L 400 400 L 0 400 Z" style="fill: none; stroke: rgb(255, 255, 255); transform-origin: 200px 200px; stroke-width: 5px;" id="pizza" class="pizza"/>
+  <path d="M 400.004 200 C 400.004 200 400.004 200 400.004 200 L 0 200 C 0 200 0 200 0 200 C 0 89.55 89.543 0 200.004 0 C 310.454 0 400.004 89.55 400.004 200 Z" style="fill: none; stroke: rgb(255, 255, 255); transform-origin: 200.002px 200px; stroke-width: 5px;" id="moon" class="moon"/>
+  <path d="M 400 200 C 400 200.212 400 200.424 400 200.635 L 400 200 L 200 200 L 200 399.999 L 200.64 399.999 C 200.42 400 200.21 400 200 400 C 89.54 400 0 310.457 0 200 C 0 89.543 89.54 0 200 0 C 310.46 0 400 89.543 400 200 Z" style="stroke: rgb(255, 255, 255); fill: none; stroke-width: 5px;" id="pacman" class="pacman"/>
+</svg>

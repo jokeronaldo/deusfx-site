@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 102" xmlns:bx="https://boxy-svg.com" width="102px" height="102px">
+  <defs>
+    <bx:grid x="141.234" y="300.84" width="100" height="100"/>
+  </defs>
+  <path d="M 86.124 15.644 C 86.161 15.684 86.199 15.723 86.236 15.762 L 86.124 15.644 L 50.862 51.001 L 86.124 86.356 L 86.236 86.243 C 86.198 86.282 86.161 86.319 86.124 86.356 C 66.649 105.882 35.072 105.881 15.602 86.356 C -3.868 66.83 -3.868 35.171 15.602 15.644 C 35.072 -3.881 66.649 -3.881 86.124 15.644 Z" style="vector-effect: non-scaling-stroke; stroke: rgb(255, 255, 255); fill: rgba(255, 255, 255, 0); stroke-width: 1; transform-origin: 51px 51.001px; paint-order: stroke;" id="pacman" class="pacman"/>
+</svg>

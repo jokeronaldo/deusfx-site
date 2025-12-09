@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" xmlns:bx="https://boxy-svg.com">
+  <path d="M -319.19 -320 L 0.796 0 L -319.19 0 L -319.19 -320 Z" bx:shape="triangle -319.19 -320 319.986 320 0 0 1@cc21722d" style="stroke-linecap: square; paint-order: fill; stroke-miterlimit: 1; fill: none; stroke-width: 5;" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+  <path d="M -0.782 -320 L 319.218 0 L -0.782 0 L -0.782 -320 Z" bx:shape="triangle -0.782 -320 320 320 0 0 1@2684d8ba" style="fill: none; stroke-width: 5;" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+  <path d="M 319.218 0.004 L -0.782 0.004 L -0.782 320.004 L 319.218 0.004 Z M 4.088 4.874 L 307.46 4.874 L 4.088 308.246 L 4.088 4.874 Z" style="fill: rgb(61, 61, 255); stroke-width: 1;"/>
+  <g transform="matrix(1, 0, 0, 1, 10, -10)">
+    <path d="M 525.41 264.07 L 664.735 403.395 L 525.41 403.395 L 525.41 264.07 Z" bx:shape="triangle 525.41 264.07 139.325 139.325 0 0 1@3580f636" style="stroke: rgb(61, 61, 255); fill: none; stroke-width: 5; transform-origin: 595.055px 333.726px;" transform="matrix(0.707107, -0.707107, -0.707107, -0.707107, -346.492878, -167.588597)"/>
+    <path d="M -525.41 -264.07 L -386.085 -124.745 L -525.41 -124.745 L -525.41 -264.07 Z" bx:shape="triangle -525.41 -264.07 139.325 139.325 0 0 1@bf960d4b" style="stroke: rgb(61, 61, 255); fill: none; stroke-width: 5; transform-origin: -455.764px -194.415px;" transform="matrix(-0.707107, -0.707107, 0.707107, -0.707107, 506.291139, 360.555003)"/>
+  </g>
+</svg>

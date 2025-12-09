@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" style="mix-blend-mode: hard-light;">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="80.001" y1="0" x2="80.001" y2="320" id="gradient-0" gradientTransform="matrix(0.924939, -0.380116, 0.358078, 0.820006, -29.802841, 68.007854)">
+      <stop offset="0" style="stop-color: rgb(0, 14, 255);"/>
+      <stop offset="1" style="stop-color: rgb(0% 0% 0%)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="240" y1="0" x2="240" y2="320" id="gradient-1" gradientTransform="matrix(-0.474575, 0.880215, -1.25, -0.9375, 713.898027, 188.748517)">
+      <stop offset="0" style=""/>
+      <stop offset="1" style="stop-color: rgb(64, 0, 255);"/>
+    </linearGradient>
+  </defs>
+  <rect width="160.001" height="320" style="stroke-width: 0.91; fill: url(&quot;#gradient-0&quot;);"/>
+  <rect x="160" width="160" height="320" style="stroke: rgb(0, 0, 0); fill: url(&quot;#gradient-1&quot;);"/>
+</svg>

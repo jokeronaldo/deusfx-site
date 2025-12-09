@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" style="mix-blend-mode: hard-light;">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="906.191" y1="0" x2="906.191" y2="329.524" id="gradient-4" gradientTransform="matrix(-0.679076, -0.694188, 0.533736, -0.889146, 639.49326, 929.06646)">
+      <stop offset="0" style="stop-color: rgb(24, 16, 72);"/>
+      <stop offset="1" style="stop-color: rgb(40, 99, 236);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1070.953" y1="0" x2="1070.953" y2="164.762" id="gradient-6" gradientTransform="matrix(-1.652551, 0, 0, -1.101693, 2013.446411, 181.516966)">
+      <stop offset="0" style="stop-color: rgb(22, 13, 59);"/>
+      <stop offset="1" style="stop-color: rgb(42, 105, 237);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1070.953" y1="164.762" x2="1070.953" y2="329.524" id="gradient-5" gradientTransform="matrix(1.217289, 0, 0, 1.217289, -1044.011196, -93.905825)">
+      <stop offset="0" style="stop-color: rgb(24, 16, 72);"/>
+      <stop offset="1" style="stop-color: rgb(37, 93, 220);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="83.095" y1="7.959" x2="83.095" y2="297" id="gradient-0" gradientTransform="matrix(0.609629, 0.792687, -0.447393, 0.344076, 91.628838, -48.880669)">
+      <stop offset="0" style="stop-color: rgb(255, 255, 255);"/>
+      <stop offset="1" style="stop-color: rgb(255, 255, 255); stop-opacity: 0;"/>
+    </linearGradient>
+  </defs>
+  <g style="transform-origin: 160px 160px;">
+    <rect width="160.001" height="320" style="fill: url(&quot;#gradient-4&quot;); stroke-width: 0.91;"/>
+    <rect x="159.999" width="160.001" height="106.667" style="stroke-width: 0.91; fill: url(&quot;#gradient-6&quot;);"/>
+    <rect x="159.999" width="160.001" height="213.331" style="stroke-width: 0.91; fill: url(&quot;#gradient-5&quot;);" y="106.667"/>
+    <rect x="10.506" y="10.959" width="139.178" height="289.041" style="fill: url(&quot;#gradient-0&quot;); mix-blend-mode: hard-light; opacity: 0.7;"/>
+  </g>
+</svg>

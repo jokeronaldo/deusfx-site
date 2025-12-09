@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px" xmlns:bx="https://boxy-svg.com">
+  <g style="transform-origin: 160px 160px;">
+    <path d="M -319.98 -320 L 0.006 0 L -319.98 0 L -319.98 -320 Z" bx:shape="triangle -319.98 -320 319.986 320 0 0 1@e8092a37" style="stroke-linecap: square; paint-order: fill; stroke-width: 36.042; stroke-miterlimit: 1; fill: url(&quot;#gradient-1&quot;);" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+    <path d="M 0.01 -320 L 319.996 0 L 0.01 0 L 0.01 -320 Z" bx:shape="triangle 0.01 -320 319.986 320 0 0 1@f4529df8" style="stroke-linecap: square; stroke-width: 36.042; stroke-miterlimit: 1; fill: url(&quot;#gradient-0&quot;); paint-order: fill; mix-blend-mode: lighten;" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+    <path d="M 0 32.409 L 240 272.406 L 0 272.406 L 0 32.409 Z" bx:shape="triangle 0 32.409 240 239.997 0 0 1@1fac3e37" style="fill: url(&quot;#gradient-2&quot;); mix-blend-mode: overlay; transform-origin: -66.253px 274.044px;" transform="matrix(0, 1, -1, 0, 66.253006, -274.044342)"/>
+  </g>
+  <defs>
+    <bx:grid x="0" y="0" width="82.381" height="82.381"/>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="164.767" y1="-329.52" x2="164.767" y2="0.004" id="gradient-0" gradientTransform="matrix(0.716806, 0.655138, -0.485543, 0.485549, -118.104271, -107.947014)" spreadMethod="pad">
+      <stop offset="0" style="stop-color: rgb(17.255% 41.961% 100%)"/>
+      <stop offset="1" style="stop-color: rgb(0, 20, 40);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-164.753" y1="-329.52" x2="-164.753" y2="0.004" id="gradient-1" gradientTransform="matrix(0.94488, -0.22408, 0.242771, 0.728323, -84.32608, -116.920555)">
+      <stop offset="0" style="stop-color: rgb(71, 42, 170);"/>
+      <stop offset="1" style="stop-color: rgb(0, 2, 14);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="123.572" y1="33.374" x2="123.572" y2="280.517" id="gradient-2" gradientTransform="matrix(-0.00852, -0.971048, 0.542766, -0.0441, 42.576008, 403.932838)">
+      <stop offset="0" style="stop-color: rgb(255, 255, 255); stop-opacity: 0;"/>
+      <stop offset="1" style="stop-color: rgb(255, 255, 255);"/>
+    </linearGradient>
+  </defs>
+</svg>

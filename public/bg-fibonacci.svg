@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Golden_Ratio" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;">
+  <circle style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" cx="536.5" cy="590.5" r="50"/>
+  <circle style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" cx="668" cy="559" r="81.5"/>
+  <circle style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" cx="275" cy="428" r="212.5"/>
+  <circle style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" cx="617.5" cy="346.5" r="131"/>
+  <g>
+    <rect x="62" y="215.477" style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" width="424.676" height="424.678"/>
+    <rect x="486.676" y="215.477" style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" width="262.324" height="262.324"/>
+    <rect x="586.637" y="477.791" style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" width="162.363" height="162.364"/>
+    <rect x="486.674" y="540.22" style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" width="99.936" height="99.935"/>
+    <rect x="486.674" y="477.805" style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" width="62.348" height="62.414"/>
+    <rect x="549.022" y="477.805" style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" width="37.615" height="37.615"/>
+    <rect x="561.765" y="515.421" style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" width="24.872" height="24.806"/>
+    <rect x="549.022" y="527.482" style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" width="12.743" height="12.743"/>
+    <path style="fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke: rgba(0, 113, 188, 0.02);" d=" M62.5,640.5c0-234.912,190.088-425,425-425h-1c144.816,0,262,117.184,262,262c0,90.096-72.904,163-163,163h1 c-55.273,0-100-44.727-100-100c0-34.822,28.178-63,63-63h-1c21.004,0,38,16.996,38,38c0,13.818-11.182,25-25,25 c-6.633,0-12-5.814-12-13"/>
+  </g>
+</svg>

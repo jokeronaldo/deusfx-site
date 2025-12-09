@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <path d="M 6.012 6.012 L 84.297 6.012 L 84.297 162.127 L 6.012 162.127 L 6.012 6.012" style="fill: rgba(255, 29, 0, 0.75);"/>
+  <defs>
+    <bx:grid x="0" y="0" width="2.004" height="2.004"/>
+  </defs>
+  <path d="M 175.352 6.012 L 253.637 6.012 L 253.637 162.127 L 175.352 162.127 L 175.352 6.012" style="stroke-width: 1; fill: rgba(0, 5, 255, 0.62);"/>
+  <path d="M 275.174 6.563 C 275.226 6.509 275.278 6.509 275.33 6.563 L 353.382 87.438 C 353.43399999999997 87.492 353.40799999999996 87.519 353.304 87.519 L 197.2 87.519 C 197.096 87.519 197.07000000000002 87.492 197.122 87.438 L 275.174 6.563" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, -150.248441, 37.147564)"/>
+  <path d="M 71.393 78.676 L 226.545 233.828 L 71.393 233.828 L 71.393 78.676" style="fill: rgb(194, 216, 6); stroke-width: 1; transform-origin: 148.969px 156.252px;" transform="matrix(0, 1, -1, 0, 269.287018, -72.663986)"/>
+  <path d="M -488.98 12.024 L -333.828 167.176 L -488.98 167.176 L -488.98 12.024" style="stroke-width: 1; fill: rgb(0, 216, 189); transform-origin: -411.403px 89.598px;" transform="matrix(-1, 0, 0, 1, 822.80603, 0)"/>
+  <path d="M 71.393 78.676 L 226.545 233.828 L 71.393 233.828 L 71.393 78.676" style="stroke-width: 1; fill: rgb(19, 117, 216); transform-origin: 148.969px 156.252px;" transform="matrix(0, 1, 1, 0, 265.279007, -72.664009)"/>
+  <path d="M 152.151 -9.912 L 230.436 -9.912 L 230.436 146.203 L 152.151 146.203 L 152.151 -9.912" style="stroke-width: 1; fill: rgba(0, 255, 118, 0.62); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, 63.115987, -23.120003)"/>
+  <path d="M 152.151 -9.912 L 230.436 -9.912 L 230.436 146.203 L 152.151 146.203 L 152.151 -9.912" style="stroke-width: 1; transform-origin: 191.294px 68.146px; fill: rgb(8, 0, 203);" transform="matrix(0, 1, -1, 0, 63.119003, 20.967972)"/>
+</svg>

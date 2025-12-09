@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <path d="M 500 219.349 L 300 219.349 L 400 400 L 500 219.349 Z" style="fill: rgb(216, 216, 216);"/>
+  <path d="M 266.69 280.284 L 200.314 280.284 L 233.503 360.634 L 266.69 280.284 Z" style="fill: rgb(216, 216, 216); stroke-width: 1; transform-origin: 233.503px 280.284px;" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, -0.000012, 0.000009)"/>
+  <path d="M 266.69 280.284 L 200.314 280.284 L 233.503 199.934 L 266.69 280.284 Z" style="fill: rgb(216, 216, 216); stroke-width: 1; transform-origin: 233.503px 280.284px;" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, -0.000012, 0.000009)"/>
+  <path d="M 99.506 271.452 L 57.524 271.452 L 78.516 370.37 L 99.506 271.452 Z" style="fill: rgb(216, 216, 216); stroke-width: 1; transform-origin: 78.516px 271.452px;" transform="matrix(-0.258819, 0.965926, -0.965926, -0.258819, -0.000002, -0.000017)"/>
+  <path d="M 99.506 271.452 L 57.524 271.452 L 78.516 172.533 L 99.506 271.452 Z" style="fill: rgb(216, 216, 216); stroke-width: 1; transform-origin: 78.516px 271.452px;" transform="matrix(-0.258819, 0.965926, -0.965926, -0.258819, -0.000002, -0.000017)"/>
+</svg>

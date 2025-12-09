@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" xmlns:bx="https://boxy-svg.com">
+  <path d="M -70.701 -34.125 L -49.267 -12.691 L -70.701 -12.691 L -70.701 -34.125 Z" bx:shape="triangle -70.701 -34.125 21.434 21.434 0 0 1@02a01b73" style="stroke-miterlimit: 1.4; vector-effect: non-scaling-stroke; fill: url(&quot;#gradient-4&quot;); transform-origin: -59.986px -23.411px;" transform="matrix(0.707107, 0.707107, 0.707107, -0.707107, 118.225001, 80.664362)"/>
+  <defs>
+    <bx:grid x="0" y="0" width="0.755" height="0.755"/>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="59.045" y1="-62.903" x2="59.045" y2="-36.071" id="gradient-0" spreadMethod="pad" gradientTransform="matrix(0.897849, 0.684355, -0.463253, 0.607769, -56.120083, -45.812523)">
+      <stop offset="0" style="stop-color: rgb(4, 18, 255);"/>
+      <stop offset="1" style="stop-color: rgb(0, 9, 126);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="72.119" y1="30.228" x2="72.119" y2="49.213" id="gradient-3" gradientTransform="matrix(1.121855, 0.126165, -0.060904, 0.541553, -3.601508, 16.589214)">
+      <stop offset="0" style="stop-color: rgb(81, 73, 255);"/>
+      <stop offset="1" style="stop-color: rgb(0, 26, 191);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-53.133" y1="-30.228" x2="-53.133" y2="-11.243" id="gradient-4" gradientTransform="matrix(-0.367854, 1.067315, -1.004848, -0.346324, -101.112139, 32.062309)">
+      <stop offset="0" style="stop-color: rgb(0, 14, 187);"/>
+      <stop offset="1" style="stop-color: rgb(66, 66, 255);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-46.517" y1="45.443" x2="-46.517" y2="58.89" id="gradient-1" gradientTransform="matrix(-0.817921, -0.778128, 0.480626, -0.505208, -97.761925, 39.017189)">
+      <stop offset="0" style="stop-color: rgb(96, 105, 255);"/>
+      <stop offset="1" style="stop-color: rgb(25, 17, 143);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="50.161" y1="-98.868" x2="50.161" y2="-1.561" id="gradient-2" gradientTransform="matrix(0.950978, -0.309259, 0.323477, 0.994697, 2.963956, 15.504487)">
+      <stop offset="0" style="stop-color: rgb(1, 0, 255);"/>
+      <stop offset="1" style="stop-color: rgb(6, 6, 15);"/>
+    </linearGradient>
+  </defs>
+  <path d="M 1.508 -98.868 L 98.815 -1.561 L 1.508 -1.561 L 1.508 -98.868 Z" bx:shape="triangle 1.508 -98.868 97.307 97.307 0 0 1@76040b17" style="stroke-miterlimit: 1.4; vector-effect: non-scaling-stroke; stroke-width: 1; fill: url(&quot;#gradient-2&quot;);" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+  <path d="M 12.44 -57.23 L 42.73 -26.94 L 12.44 -26.94 L 12.44 -57.23 Z" bx:shape="triangle 12.44 -57.23 30.29 30.29 0 0 1@b7292fa6" style="stroke-miterlimit: 1.4; vector-effect: non-scaling-stroke; stroke-width: 1; fill: url(&quot;#gradient-0&quot;); paint-order: fill;" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+  <path d="M -37.968 37.519 L -22.785 52.702 L -37.968 52.702 L -37.968 37.519 Z" bx:shape="triangle -37.968 37.519 15.183 15.183 0 0 1@b3ccbe0e" style="stroke-miterlimit: 1.4; vector-effect: non-scaling-stroke; stroke-width: 1; fill: url(&quot;#gradient-1&quot;); transform-origin: -30.377px 45.111px;" transform="matrix(-1, 0, 0, 1, 60.754963, 0)"/>
+  <path d="M 70.701 34.125 L 92.135 55.559 L 70.701 55.559 L 70.701 34.125 Z" bx:shape="triangle 70.701 34.125 21.434 21.434 0 0 1@09ccc38d" style="stroke-miterlimit: 1.4; vector-effect: non-scaling-stroke; fill: url(&quot;#gradient-3&quot;); transform-origin: 81.418px 44.842px;" transform="matrix(0.707107, -0.707107, 0.707107, 0.707107, -23.194069, -17.898823)"/>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320px" height="320px">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="906.191" y1="0" x2="906.191" y2="329.524" id="gradient-4" gradientTransform="matrix(-0.616956, -0.66948, 0.398982, -0.608355, 606.350829, 850.18492)">
+      <stop offset="0" style="stop-color: rgb(18, 12, 54);"/>
+      <stop offset="1" style="stop-color: rgb(40, 99, 236);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1070.953" y1="0" x2="1070.953" y2="164.762" id="gradient-6" gradientTransform="matrix(-1.549256, 0, 0, -1.032837, 1887.593506, 170.172145)">
+      <stop offset="0" style="stop-color: rgb(22, 13, 59);"/>
+      <stop offset="1" style="stop-color: rgb(42, 105, 237);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1070.953" y1="164.762" x2="1070.953" y2="329.524" id="gradient-5" gradientTransform="matrix(0.613871, 0, 0, 0.613871, -414.008592, -1.151459)">
+      <stop offset="0" style="stop-color: rgb(24, 16, 72);"/>
+      <stop offset="1" style="stop-color: rgb(37, 93, 220);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="75.176" y1="10.718" x2="75.176" y2="282.645" id="gradient-1" gradientTransform="matrix(0.490229, 0.871593, -0.542936, 0.32833, 156.611282, -92.960899)">
+      <stop offset="0" style="stop-color: rgb(255, 255, 255);"/>
+      <stop offset="1" style="stop-color: rgb(255, 255, 255); stop-opacity: 0;"/>
+    </linearGradient>
+  </defs>
+  <rect width="150" height="300" style="fill: url(&quot;#gradient-4&quot;); stroke-width: 0.91;"/>
+  <rect x="149.998" width="150" height="100" style="stroke-width: 0.91; fill: url(&quot;#gradient-6&quot;);"/>
+  <rect x="149.998" width="150" height="199.998" style="stroke-width: 0.91; fill: url(&quot;#gradient-5&quot;);" y="100"/>
+  <rect x="15.149" y="7.718" width="128.054" height="271.927" style="fill: url(&quot;#gradient-1&quot;); mix-blend-mode: color-dodge;"/>
+</svg>
