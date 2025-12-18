@@ -2,7 +2,6 @@
 import { useLayoutStore } from '@/stores/layout'
 import { materials } from 'deusfx/src/materials'
 import { layouts } from 'deusfx/src/layouts'
-import { stylesColorScheme } from '../styles/dfx-styles-color-scheme'
 import { ref } from 'vue'
 //import { injectCss } from 'deusfx/src/utils/dfx-util-css'
 //injectCss(materials, ['glassmorphism'])
@@ -67,7 +66,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
                 </div>
               </div>
               <div class="text-xs text-blue-700">
-                <strong class="blue">Effects</strong>. <strong>Materials</strong>.
+                <strong class="text-blue-700">Effects</strong>. <strong>Materials</strong>.
                 <strong>Blueprints</strong>.
                 <br />
                 A new approach to creative compose web componennts.
@@ -169,10 +168,9 @@ console.log(document.getElementById('get-started-home-button'), 888)
                 Official deus<strong class="text-black">fx</strong> editor studio.
               </div>
             </div>
-            <div class="flex items-start justify-self-start" style="margin: 0; max-height: 0">
-              <dfx-button color="black" colorScheme="light" :addClass="['adfx-action-primary']"
-                ><strong class="font-black text-white" style="margin: 0; height: 0">go</strong
-                >&nbsp;machina</dfx-button
+            <div class="w-full" style="line-height: 0">
+              <dfx-button color="black" colorScheme="light" block variant="deus"
+                ><strong class="font-black text-white">go</strong>&nbsp;machina</dfx-button
               >
             </div>
           </div>
@@ -185,17 +183,16 @@ console.log(document.getElementById('get-started-home-button'), 888)
               color="blue"
               size="lg"
               style="--dfx-color-text: white; stroke-width: 5px"
-              :addClass="['adfx-action-secondarya']"
-              onmouseover="document.getElementById('get-started-home-button').isHover()"
-              -onmouseout="document.getElementById('get-started-home-button').isOut()"
             >
               get started
               <div class="ml-4">
-                <dfx-shape-line-icon
-                  id="get-started-home-button"
+                <dfx-geometric-icon
                   icon="dfx-tkt-start"
-                  size="18px"
-                  :color="['lightblue']"
+                  :shapesOverride="{
+                    strokeColor: 'white',
+                    strokeWidth: '1px',
+                    fillColor: ['rgba(255, 255, 255, 0.05)', 'rgba(255, 255, 255, 0.2)'],
+                  }"
                 />
               </div>
             </dfx-button>

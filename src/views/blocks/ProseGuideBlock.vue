@@ -47,7 +47,10 @@ import DeusFxLogo from '@/components/DeusFxLogo.vue'
         <div class="flex flex-col grow h-full justify-between axxx pt-[75px]">
           <div class="flex flex-col grow h-full">
             <div class="flex flex-col p-5">
-              <h3 class="mb-1 text-3xl text-center font-thin opacity-90" style="color: white">
+              <h3
+                class="mb-1 text-3xl text-center font-thin opacity-90 special-title"
+                style="color: white"
+              >
                 getting <strong class="font-semibold">started</strong>
               </h3>
               <div class="flex justify-center w-full">

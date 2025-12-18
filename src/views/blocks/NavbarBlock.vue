@@ -124,7 +124,7 @@ const linkHandle = (link) => {
 }
 
 onMounted(() => {
-  console.log(RightToolbarRef)
+  //
 })
 </script>
 

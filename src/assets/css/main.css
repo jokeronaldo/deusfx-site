@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/preflight.css' layer(base);
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
-@layer reset, base, components, utilities, layout, layout-navbar, layout-prose, layout-content;
+@layer reset, base, components, utilities, properties, layout, layout-navbar, layout-prose, layout-content;
 
 @layer layout {
   * {
     box-sizing: border-box !important;
-    font-family: 'Inter', sans-serif;
+    font-family:
+      'Inter', 'Figtree', 'IBM Plex Mono', 'DM Sans', 'Source Code Pro', sans-serif !important;
     font-optical-sizing: auto;
     font-style: normal;
     scroll-behavior: smooth;
+  }
+
+  .special-title {
+    font-family:
+      'Inter', 'Figtree', 'IBM Plex Mono', 'DM Sans', 'Source Code Pro', sans-serif !important;
   }
 
   .force-gpu {

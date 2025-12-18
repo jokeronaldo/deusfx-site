@@ -3,6 +3,8 @@ import ComponentsPage from '../views/pages/ComponentsPage.vue'
 import MachinaPage from '../views/pages/MachinaPage.vue'
 import GuidePage from '../views/pages/GuidePage.vue'
 import GuideIntroductionPage from '../views/pages/guide/GuideIntroductionPage.vue'
+import ComponentButtonPage from '../views/pages/components/ComponentButtonPage.vue'
+import ComponentBasePage from '../views/pages/components/ComponentBasePage.vue'
 import HomePage from '../views/pages/HomePage.vue'
 import MaterialsPage from '../views/pages/MaterialsPage.vue'
 import StructuresPage from '../views/pages/StructuresPage.vue'
@@ -12,7 +14,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       meta: { layout: 'DefaultLayout' },
       component: HomePage,
     },
@@ -21,6 +23,24 @@ const router = createRouter({
       name: 'components',
       meta: { layout: 'DefaultLayout' },
       component: ComponentsPage,
+      children: [
+        {
+          path: 'button',
+          name: 'ComponentButton',
+          meta: { layout: 'DefaultLayout' },
+          components: {
+            componentsView: ComponentButtonPage,
+          },
+        },
+        {
+          path: 'base',
+          name: 'ComponentBase',
+          meta: { layout: 'DefaultLayout' },
+          components: {
+            componentsView: ComponentBasePage,
+          },
+        },
+      ],
     },
     {
       path: '/guide',

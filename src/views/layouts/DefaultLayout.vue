@@ -87,7 +87,7 @@ watch(
     z-index: 901;
 
     > div {
-      height: 100vh;
+      height: 100%;
     }
   }
 

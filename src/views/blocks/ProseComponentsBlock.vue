@@ -17,12 +17,12 @@
     >
       <div class="flex flex-col h-screen --r--items-center xxx">
         <div class="pb-2 pt-4 px-3" style="box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1)">
-          <router-link to="./">
+          <router-link :to="{ name: 'Home' }">
             <DeusFxLogo color="blue" colorDeus="white" invertedColor="white" width="100px" />
           </router-link>
         </div>
         <div class="mt-5">
-          <h3 class="mb-1 text-3xl text-white/90 text-center font-thin">
+          <h3 class="mb-1 text-3xl text-white/90 text-center font-[Inter] font-thin special-title">
             web <strong class="font-semibold">components</strong>
           </h3>
           <div class="flex justify-center w-full">
@@ -38,31 +38,30 @@
         </div>
         <div class="grow option-items items-center justify-center px-4">
           <div
-            v-for="(option, index) in opt"
+            v-for="(category, index) in componentStore.categories"
             :key="index"
             class="flex flex-col justify-center items-center option-item"
           >
-            <dfx-button color="black" secondaryColor="blue" size="lg" icon phantom>
+            <dfx-button
+              color="black"
+              colorize="true"
+              secondaryColor="blue"
+              size="lg"
+              variant="deus"
+              icon
+              phantom
+            >
               <dfx-geometric-icon
-                :icon="option.icon"
-                :grid="{
-                  slotWidth: '5px',
-                  slotHeight: '5px',
-                }"
+                :icon="category.icon"
                 :shapesOverride="{
                   strokeColor: 'white',
                   strokeWidth: '1px',
-                  opacity: ['0.7', 0.9],
-                  fillColor: ['rgba(255, 255, 255, 0.05)', 'rgba(255, 255, 255, 0.2)'],
+                  opacity: [0.7, 0.8, 0.9, 1],
+                  fillColor: ['rgba(255, 255, 255, 0.05)', 'rgba(255, 255, 255, 0.1)'],
                 }"
               />
-              <!--
-              <dfx-shape-line-icon :icon="option.icon" :color="['lightblue']">
-                <dfx-geometric-grid-svg />
-              </dfx-shape-line-icon>
-              -->
             </dfx-button>
-            <div class="font-thin text-lg text-white" v-html="option.title" />
+            <div class="font-thin text-sm text-white" v-html="category.title" />
           </div>
         </div>
         <div class="flex justify-center mb-4">
@@ -84,15 +83,15 @@
   background-image:
     repeating-linear-gradient(
       0deg,
-      rgba(255, 255, 255, 0.04) 0px,
-      rgba(255, 255, 255, 0.04) 1px,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
       transparent 1px,
       transparent 20px
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.04) 0px,
-      rgba(255, 255, 255, 0.04) 1px,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
       transparent 1px,
       transparent 20px
     );
@@ -134,48 +133,7 @@
 
 <script setup lang="ts">
 import DeusFxLogo from '@/components/DeusFxLogo.vue'
-import DeusFxAlpha from '@/components/DeusFxAlpha.vue'
-import OptionItem from '@/components/OptionItem.vue'
-import { injectMaterial } from 'deusfx/src/utils/dfx-util-css'
+import { useComponentStore } from '@/stores/component'
 
-injectMaterial('bash')
-
-const opt = [
-  {
-    title: 'basics',
-    icon: 'dfx-cmp-basics',
-  },
-  {
-    title: 'feedback',
-    icon: 'dfx-cmp-feedback',
-  },
-  {
-    title: 'data',
-    icon: 'dfx-cmp-data',
-  },
-  {
-    title: 'contents',
-    icon: 'dfx-cmp-contents',
-  },
-  {
-    title: 'Layout',
-    icon: 'dfx-cmp-layout',
-  },
-  {
-    title: 'forms',
-    icon: 'dfx-cmp-forms',
-  },
-  {
-    title: 'editors',
-    icon: 'dfx-cmp-editors',
-  },
-  {
-    title: 'overlay',
-    icon: 'dfx-cmp-overlay',
-  },
-  {
-    title: 'navigation',
-    icon: 'dfx-cmp-navigation',
-  },
-]
+const componentStore = useComponentStore()
 </script>
