@@ -33,69 +33,27 @@ const data = reactive({
 
 <template>
   <div class="component-page w-full" v-page-body-style>
-    <div class="sticky top-0">
-      <dfx-card
-        material="glassmorphism"
-        radius="none"
-        style="--dfx-glassmorphism-blur: 3px"
-        width="100%"
-      >
-        <div class="border-white/10 border-b flex justify-between p-0">
-          <div class="flex font-thin text-white/90 prose prose-h1 prose-xl p-4">
-            <dfx-geometric-icon icon="dfx-cmp-button" isPrepend />
-            Button
-          </div>
-          <div class="component-tab bg-blue-300/5 force-render">
-            <dfx-tab
-              part="dfx-tab"
-              height="100%"
-              width="100%"
-              :items="[
-                {
-                  id: 'button-spec',
-                  title: 'spec',
-                },
-                {
-                  id: 'button-api',
-                  title: 'api',
-                },
-                {
-                  id: 'button-blueprints',
-                  title: 'blueprints',
-                },
-              ]"
-            />
-          </div>
-        </div>
-        <div v-if="false" class="prose pb-4 px-4">
-          <dfx-tab
-            height="50px"
-            width="100%"
-            :items="[
-              {
-                id: 'button-spec',
-                title: 'spec',
-              },
-              {
-                id: 'button-api',
-                title: 'api',
-              },
-              {
-                id: 'button-blueprints',
-                title: 'blueprints',
-              },
-            ]"
-          />
-        </div>
-      </dfx-card>
-    </div>
-    <div class="p-4">
-      <h1 class="p-0 m-0">Spec</h1>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <div>08252717977</div>
-    </div>
+    <div class="p-4 text-right">Variants</div>
+    <dfx-base
+      padding="10px"
+      style="--dfx-background-color-base-component: rgba(255, 255, 255, 0.03)"
+    >
+      <dfx-button variant="deus">deus</dfx-button>
+      <dfx-button variant="ghost">ghost</dfx-button>
+      <dfx-button variant="pill">pill</dfx-button>
+      <dfx-button variant="duo-tone">duo tone</dfx-button>
+      <dfx-button variant="material" material="mosaic">material</dfx-button>
+      <dfx-button variant="link">link</dfx-button>
+      <dfx-button variant="flat" color="purple">flat</dfx-button>
+      <dfx-button variant="outline">outline</dfx-button>
+    </dfx-base>
+    <!--
+    <dfx-list-blueprint />
+     -->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div>08252717977</div>
   </div>
 </template>
 

@@ -29,12 +29,13 @@ console.log(document.getElementById('get-started-home-button'), 888)
     <div class="flex h-full items-center-safe justify-evenly">
       <div class="prose prose-2xl">
         <div>
-          <h1 class="mb-0">Web components first</h1>
           <h1 class="mb-0">
-            micro to Macro <span style="color: blue">UI toolk<strong>it</strong>.</span>
+            Web components <span style="color: blue">blueprint<strong></strong></span>
           </h1>
-          <h4 class="font-light mt-0">
-            Easy <strong>m2M</strong> tools to create your own component package, webapp or site.
+          <h1 class="mb-0">architecture UI engine.</h1>
+          <h4 class="font-light text-xl mt-2">
+            <strong class="font-medium">Reusability first,</strong>
+            faster prototype, high-end components <strong>&&</strong> non-programmers friendly.
           </h4>
         </div>
         <br />
@@ -61,15 +62,12 @@ console.log(document.getElementById('get-started-home-button'), 888)
                     width="20px"
                   />
                 </div>
-                <div class="text-sm">
-                  introducing <strong class="text-blue-700">concepts</strong>
-                </div>
+                <div class="text-sm">introducing concepts</div>
               </div>
               <div class="text-xs text-blue-700">
-                <strong class="text-blue-700">Effects</strong>. <strong>Materials</strong>.
-                <strong>Blueprints</strong>.
+                <strong class="text-blue-700">Blueprints, Material & Decoration.</strong>
                 <br />
-                A new approach to creative compose web componennts.
+                A new approach to design creative high-end web componennts.
               </div>
             </div>
           </div>
@@ -94,9 +92,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
                   width="20px"
                 />
               </div>
-              <div class="text-sm">
-                ready to use, <strong class="text-blue-700">no bundle</strong>
-              </div>
+              <div class="text-sm">ready to use, no bundle</div>
             </div>
             <div class="text-xs text-blue-700">
               No need of compile or package procecss. Include via CDN or download (package available
@@ -170,7 +166,9 @@ console.log(document.getElementById('get-started-home-button'), 888)
             </div>
             <div class="w-full" style="line-height: 0">
               <dfx-button color="black" colorScheme="light" block variant="deus"
-                ><strong class="font-black text-white">go</strong>&nbsp;machina</dfx-button
+                ><strong class="font-black text-white">go</strong>&nbsp;<span class="text-white"
+                  >machina</span
+                ></dfx-button
               >
             </div>
           </div>
@@ -178,16 +176,13 @@ console.log(document.getElementById('get-started-home-button'), 888)
         <br />
         <div style="display: flex; flex-direction: row; justify-content: center">
           <router-link to="./guide">
-            <dfx-button
-              colorScheme="light"
-              color="blue"
-              size="lg"
-              style="--dfx-color-text: white; stroke-width: 5px"
-            >
-              get started
+            <dfx-button colorScheme="dark" color="blue" size="lg" style="stroke-width: 5px">
+              <div class="text-white">get started</div>
               <div class="ml-4">
                 <dfx-geometric-icon
                   icon="dfx-tkt-start"
+                  width="32px"
+                  height="32px"
                   :shapesOverride="{
                     strokeColor: 'white',
                     strokeWidth: '1px',

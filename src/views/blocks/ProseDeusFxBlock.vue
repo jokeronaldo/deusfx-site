@@ -20,7 +20,7 @@ import DeusFxLogo from '@/components/DeusFxLogo.vue'
           >
             <ellipse
               style="
-                stroke: rgb(0, 0, 0);
+                stroke: rgb(138, 43, 226);
                 fill: none;
                 stroke-miterlimit: 1.4;
                 vector-effect: non-scaling-stroke;
@@ -46,7 +46,7 @@ import DeusFxLogo from '@/components/DeusFxLogo.vue'
               d="M 62.627 30.228 L 81.612 49.213 L 62.627 49.213 L 62.627 30.228 Z"
               bx:shape="triangle 62.627 30.228 18.985 18.985 0 0 1@30818f37"
               style="
-                stroke: rgb(0, 0, 0);
+                stroke: rgb(138, 43, 226);
                 fill: none;
                 stroke-miterlimit: 1.4;
                 vector-effect: non-scaling-stroke;
@@ -81,7 +81,7 @@ import DeusFxLogo from '@/components/DeusFxLogo.vue'
               d="M -38.24 45.443 L -24.793 58.89 L -38.24 58.89 L -38.24 45.443 Z"
               bx:shape="triangle -38.24 45.443 13.447 13.447 0 0 1@06fafb0a"
               style="
-                stroke: rgb(0, 0, 0);
+                stroke: rgb(138, 43, 226);
                 fill: none;
                 stroke-miterlimit: 1.4;
                 vector-effect: non-scaling-stroke;

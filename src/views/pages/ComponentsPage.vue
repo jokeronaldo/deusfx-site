@@ -34,6 +34,12 @@ const data = reactive({
   componentCategories: [],
 })
 
+const categoryComponents = computed(() =>
+  componentStore.components.filter(
+    (item) => item.category === componentStore.active.category.value,
+  ),
+)
+
 const xx = (url) => {
   router.push(url)
 }
@@ -66,10 +72,10 @@ const xx = (url) => {
             "
           >
             <div class="flex flex-col h-full option-item w-full">
-              <div class="flex justify-between p-4">
+              <div class="flex justify-between p-4 sticky top-0">
                 <div class="flex font-thin text-white/90 prose prose-2xl">
                   <dfx-geometric-icon
-                    icon="dfx-cmp-basics"
+                    :icon="componentStore.active.category.icon"
                     :shapesOverride="{
                       strokeColor: 'white',
                       strokeWidth: '1px',
@@ -77,12 +83,12 @@ const xx = (url) => {
                       fillColor: ['rgba(255, 255, 255, 0.05)', 'rgba(255, 255, 255, 0.1)'],
                     }"
                   />
-                  basics
+                  {{ componentStore.active.category.value }}
                 </div>
                 <div class="flex flex-row items-start justify-end"></div>
               </div>
               <div class="grow px-4 text-white w-full">
-                <div>
+                <div class="sticky top-[80px]">
                   <dfx-list
                     @dfx-list-item-click="
                       (event) => {
@@ -91,7 +97,7 @@ const xx = (url) => {
                     "
                     colorize
                     dividers
-                    :items="components"
+                    :items="categoryComponents"
                     :slotFunctions="{
                       itemasasda: (components) => {
                         return components.map((component) => {
@@ -144,8 +150,65 @@ const xx = (url) => {
         </div>
         <div class="grow p-0 h-full">
           <dfx-card material="bash" height="100%" style="--dfx-material-bash-border-top: 0">
+            <div class="sticky top-0 z-50">
+              <dfx-card
+                material="glassmorphism"
+                radius="none"
+                style="--dfx-glassmorphism-blur: 20px"
+                width="100%"
+              >
+                <div class="border-white/10 border-b flex justify-between p-0">
+                  <div class="flex font-thin text-white/90 prose prose-h1 prose-xl p-4">
+                    <dfx-geometric-icon icon="dfx-cmp-button" isPrepend />
+                    Button
+                  </div>
+                  <div class="component-tab force-render">
+                    <dfx-tab
+                      part="dfx-tab"
+                      height="100%"
+                      style="--dfx-background-color-tab-component: rgba(142, 197, 255, 0.05)"
+                      width="100%"
+                      :items="[
+                        {
+                          id: 'button-spec',
+                          title: 'options',
+                        },
+                        {
+                          id: 'button-api',
+                          title: 'api',
+                        },
+                        {
+                          id: 'button-blueprints',
+                          title: 'blueprints',
+                        },
+                      ]"
+                    />
+                  </div>
+                </div>
+                <div v-if="false" class="prose pb-4 px-4">
+                  <dfx-tab
+                    height="50px"
+                    width="100%"
+                    :items="[
+                      {
+                        id: 'button-spec',
+                        title: 'spec',
+                      },
+                      {
+                        id: 'button-api',
+                        title: 'api',
+                      },
+                      {
+                        id: 'button-blueprints',
+                        title: 'blueprints',
+                      },
+                    ]"
+                  />
+                </div>
+              </dfx-card>
+            </div>
             <router-view name="componentsView" v-slot="{ Component }">
-              <transition name="content-transition" :key="$route.path">
+              <transition name="component-page-transition" mode="out-in" :key="$route.path">
                 <component :is="Component" />
               </transition>
             </router-view>
@@ -166,6 +229,27 @@ const xx = (url) => {
       border-left: rgba(255, 255, 255, 0.2) solid 1px;
       box-shadow: -100px -100px 10px 50px black;
     }
+  }
+}
+
+.component-page-transition-enter-active,
+.component-page-transition-leave-active {
+  height: 100%;
+  -top: 0;
+  -left: 0;
+  -overflow: hidden;
+  -position: absolute;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.component-page-transition-enter-from,
+.component-page-transition-leave-to {
+  -position: absolute;
+  opacity: 0;
+
+  .content-menu {
+    width: 1px;
   }
 }
 </style>

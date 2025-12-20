@@ -47,9 +47,12 @@
               colorize="true"
               secondaryColor="blue"
               size="lg"
-              variant="deus"
+              variant="link"
               icon
-              phantom
+              :ref="`button${category.id}ref`"
+              :_id="category.id"
+              @item-click="(event) => selectCategory(event, category)"
+              @_id-assigned="initialCategory"
             >
               <dfx-geometric-icon
                 :icon="category.icon"
@@ -132,8 +135,27 @@
 </style>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import DeusFxLogo from '@/components/DeusFxLogo.vue'
 import { useComponentStore } from '@/stores/component'
 
+const selectCategory = (event, category) => {
+  componentStore.active.category.value = category.title
+  componentStore.active.category.icon = category.icon
+  const buttons = document.querySelectorAll('dfx-button')
+
+  buttons.forEach((button) => {
+    if (button.id !== event.target.id) {
+      button.inactivate()
+    }
+  })
+}
+
 const componentStore = useComponentStore()
+
+const initialCategory = (event) => {
+  if (event.target.id === 'Layout') {
+    event.target.click()
+  }
+}
 </script>

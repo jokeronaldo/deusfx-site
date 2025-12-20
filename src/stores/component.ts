@@ -2,7 +2,18 @@ import { computed, reactive, ref } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useComponentStore = defineStore('component', () => {
-  const active = ref()
+  const active = ref({
+    category: {
+      value: 'basics',
+      icon: 'dfx-cmp-basics',
+      component: {
+        value: 'accordion',
+        tab: {
+          value: 'options',
+        },
+      },
+    },
+  })
   const categories = ref([
     {
       icon: 'dfx-cmp-basics',
@@ -53,16 +64,16 @@ export const useComponentStore = defineStore('component', () => {
   const components = ref([
     {
       category: 'basics',
+      icon: 'dfx-cmp-accordion',
+      id: 'accordion',
+      title: 'accordion',
+    },
+    {
+      category: 'basics',
       icon: 'dfx-cmp-base',
       id: 'base',
       title: 'base',
       routeName: 'ComponentBase',
-    },
-    {
-      category: 'basics',
-      icon: 'dfx-cmp-accordion',
-      id: 'accordion',
-      title: 'accordion',
     },
     {
       category: 'basics',
@@ -76,6 +87,18 @@ export const useComponentStore = defineStore('component', () => {
       icon: 'dfx-edt-angelo',
       id: 'list',
       title: 'list',
+    },
+    {
+      category: 'forms',
+      icon: 'dfx-edt-angelo',
+      id: 'inputs',
+      title: 'inputs',
+    },
+    {
+      category: 'forms',
+      icon: 'dfx-edt-angelo',
+      id: 'switchs',
+      title: 'switchs',
     },
   ])
 
