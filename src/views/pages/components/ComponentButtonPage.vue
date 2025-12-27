@@ -35,24 +35,67 @@ const data = reactive({
   <div class="component-page w-full" v-page-body-style>
     <div class="p-4 text-right">Variants</div>
     <dfx-base
-      padding="10px"
-      style="--dfx-background-color-base-component: rgba(255, 255, 255, 0.03)"
+      colorScheme="dark"
+      mode="ground"
+      style="--base-background-color: rgba(255, 255, 255, 0.05)"
     >
-      <dfx-button variant="deus">deus</dfx-button>
-      <dfx-button variant="ghost">ghost</dfx-button>
-      <dfx-button variant="pill">pill</dfx-button>
-      <dfx-button variant="duo-tone">duo tone</dfx-button>
-      <dfx-button variant="material" material="mosaic">material</dfx-button>
-      <dfx-button variant="link">link</dfx-button>
-      <dfx-button variant="flat" color="purple">flat</dfx-button>
-      <dfx-button variant="outline">outline</dfx-button>
+      <div class="p-4">
+        <dfx-catalog
+          colorScheme="light"
+          :items="[
+            {
+              title: 'button',
+              variant: 'deus',
+            },
+            {
+              title: 'button',
+              variant: 'duo-tone',
+            },
+            {
+              title: 'ghost',
+              variant: 'ghost',
+            },
+            {
+              title: 'flat',
+              variant: 'flat',
+            },
+            {
+              title: 'link',
+              variant: 'link',
+            },
+            {
+              title: 'material',
+              variant: 'material',
+              material: 'mosaic',
+            },
+            {
+              title: 'outline',
+              variant: 'outline',
+            },
+            {
+              title: 'button',
+              variant: 'pill',
+            },
+          ]"
+        ></dfx-catalog>
+      </div>
     </dfx-base>
-    <!--
-    <dfx-list-blueprint />
-     -->
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <machina-app></machina-app>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    Parte Tecnologia
+    <br />
+    Blueprint / AST / Machina DOM imperativo
+    <br />
+    DeusFX Components Lit (templates estáticos)
+    <br />
+    Editor visual DOM + overlay
+    <br />
+    SSR Serialize AST → HTML
+    <br />
+    Runtime morph DOM diff próprio
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    presentation / composition / definition
     <div>08252717977</div>
   </div>
 </template>

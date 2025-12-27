@@ -14,7 +14,7 @@ export default defineConfig({
       template: {
         compilerOptions: {
           // 👇 aqui está o segredo
-          isCustomElement: (tag) => tag.startsWith('dfx-'),
+          isCustomElement: (tag) => tag.startsWith('dfx-') || tag.startsWith('machina-'),
         },
       },
     }),

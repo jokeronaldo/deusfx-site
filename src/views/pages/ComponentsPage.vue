@@ -98,49 +98,6 @@ const xx = (url) => {
                     colorize
                     dividers
                     :items="categoryComponents"
-                    :slotFunctions="{
-                      itemasasda: (components) => {
-                        return components.map((component) => {
-                          return html`
-                            <div
-                              class=&quot;dfx-list-item${component.active
-                                ? ' dfx-list-item-active'
-                                : ''}&quot;
-                              data-route-name=&quot;${JSON.stringify(component)}&quot;
-                              onclick=&quot;this.getRootNode().host.itemUrlCallback(this)&quot;
-                              style=&quot;cursor: pointer;&quot;
-                            >
-                              <div
-                                style=&quot;margin-right: var(--dfx-spacing-md)&quot;
-                                onmouseenter=&quot;this?._grid?.colorize()&quot;
-                              >
-                                <dfx-geometric-icon
-                                  grid=&quot;${{
-                                    rows: 3,
-                                    columns: 3,
-                                    slotHeight: '8px',
-                                    slotWidth: '8px',
-                                  }}&quot;
-                                  icon=&quot;${component.icon}&quot;
-                                  onmouseover=&quot;this?._grid?.colorize()&quot;
-                                  shapesOverride=&quot;${{
-                                    strokeColor: 'white',
-                                  }}&quot;
-                                />
-                              </div>
-                              <div>${component.title} ${component.url}</div>
-                            </div>
-                          `
-                        })
-                      },
-                    }"
-                    :blueprint="{
-                      presentation: '{{#each items}}<div>{{this.title}}</div>{{/each}}',
-                      composition: {
-                        items: () => components,
-                      },
-                      definition: '',
-                    }"
                   >
                   </dfx-list>
                 </div>
@@ -149,7 +106,11 @@ const xx = (url) => {
           </dfx-card>
         </div>
         <div class="grow p-0 h-full">
-          <dfx-card material="bash" height="100%" style="--dfx-material-bash-border-top: 0">
+          <dfx-card
+            material="bash"
+            height="100%"
+            style="--dfx-material-bash-border-top: 0; --dfx-material-bash-inner-glow: 0"
+          >
             <div class="sticky top-0 z-50">
               <dfx-card
                 material="glassmorphism"

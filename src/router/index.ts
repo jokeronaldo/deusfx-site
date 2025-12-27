@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ComponentsPage from '../views/pages/ComponentsPage.vue'
 import MachinaPage from '../views/pages/MachinaPage.vue'
+import MachinaAppIndexPage from '../views/pages/machina/app/IndextView.vue'
 import GuidePage from '../views/pages/GuidePage.vue'
 import GuideIntroductionPage from '../views/pages/guide/GuideIntroductionPage.vue'
 import ComponentButtonPage from '../views/pages/components/ComponentButtonPage.vue'
@@ -59,8 +60,8 @@ const router = createRouter({
     {
       path: '/machina',
       name: 'machina',
-      meta: { layout: 'DefaultLayout' },
-      component: MachinaPage,
+      meta: { layout: 'MachinaLayout' },
+      component: MachinaAppIndexPage,
     },
     {
       path: '/materials',

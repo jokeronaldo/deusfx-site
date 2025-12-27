@@ -1,5 +1,6 @@
 import './assets/css/main.css'
 import 'deusfx/src/components/index.ts'
+import 'deusfx/src/index.ts'
 
 import { createApp, onMounted } from 'vue'
 import { createPinia } from 'pinia'

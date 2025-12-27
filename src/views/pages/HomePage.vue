@@ -25,30 +25,62 @@ console.log(document.getElementById('get-started-home-button'), 888)
 </script>
 
 <template>
-  <div class="home-page" v-page-body-style>
+  <div class="home-page pl-1 pr-4" v-page-body-style>
     <div class="flex h-full items-center-safe justify-evenly">
       <div class="prose prose-2xl">
-        <div>
+        <div class="text-center">
           <h1 class="mb-0">
-            Web components <span style="color: blue">blueprint<strong></strong></span>
+            Web component <span style="color: blue">blueprint<strong></strong></span>
           </h1>
-          <h1 class="mb-0">architecture UI engine.</h1>
-          <h4 class="font-light text-xl mt-2">
-            <strong class="font-medium">Reusability first,</strong>
-            faster prototype, high-end components <strong>&&</strong> non-programmers friendly.
-          </h4>
+          <h1 class="mb-0">archicture UI mainframe.</h1>
         </div>
         <br />
         <div class="highlights">
-          <div class="ml-1">
+          <div class="mb-6">
+            <div
+              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
+            >
+              <div class="mb-2 w-full flex justify-evenly">
+                <i class="icon-recycle" />
+              </div>
+              <div class="flex">
+                <dfx-shape-line-printer
+                  v-for="(shape, index) in 7"
+                  :key="index"
+                  opacity="1"
+                  color="rgba(0, 0, 255, 0.3)"
+                  :shape-colors="['black', 'blue']"
+                  :blend-mode="['normal']"
+                  :stroke-width="6"
+                  width="20px"
+                />
+              </div>
+              <div class="text-sm">reusability first</div>
+            </div>
+            <div class="text-center text-xs text-center text-blue-700">
+              Every component <strong class="text-blue-700">SHOULD</strong> runs everywhere. Better,
+              <strong class="text-blue-700">MUST</strong> be transportable across any tool
+            </div>
+          </div>
+          <div>
             <div>
               <div
                 class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
               >
-                <div class="mb-2 w-full flex justify-evenly">
-                  <i class="icon-dfx-effects" />
-                  <i class="icon-dfx-materials" />
-                  <i class="icon-dfx-structures" />
+                <div class="mb-2 w-full flex justify-center">
+                  <i class="icon-web-components" />
+                  <dfx-geometric-icon
+                    icon="dfx-cmp-base"
+                    :grid="{
+                      slotHeight: '10px',
+                      slotWidth: '10px',
+                    }"
+                    :shapesOverride="{
+                      strokeColor: 'blue',
+                      strokeWidth: '1px',
+                      fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
+                    }"
+                  />
                 </div>
                 <div class="flex">
                   <dfx-shape-line-printer
@@ -62,41 +94,75 @@ console.log(document.getElementById('get-started-home-button'), 888)
                     width="20px"
                   />
                 </div>
-                <div class="text-sm">introducing concepts</div>
+                <div class="text-sm">web component blueprint</div>
               </div>
-              <div class="text-xs text-blue-700">
-                <strong class="text-blue-700">Blueprints, Material & Decoration.</strong>
-                <br />
-                A new approach to design creative high-end web componennts.
+              <div class="text-center text-xs text-blue-700">
+                Clear layers split, minimalistic tests capable, simple but robust. One blueprint for
+                any renderer
               </div>
             </div>
           </div>
           <div>
-            <div
-              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
-            >
-              <div class="mb-2 w-full items-center flex justify-center">
-                <i class="icon-webpack" />
-                <i class="icon-swap" />
-                <i class="icon-cloudflare" />
+            <div>
+              <div
+                class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
+              >
+                <div class="mb-2 w-full flex justify-evenly">
+                  <dfx-geometric-icon
+                    icon="dfx-mph-triangle-intersect-square"
+                    :grid="{
+                      slotHeight: '11px',
+                      slotWidth: '11px',
+                    }"
+                    :shapesOverride="{
+                      strokeColor: 'blue',
+                      strokeWidth: '1px',
+                      fillColor: ['rgba(0, 0, 255, 0.05)', 'rgba(0, 0, 255, 0.1)'],
+                    }"
+                  />
+                  <dfx-geometric-icon
+                    icon="dfx-mph-triangle-inside-square"
+                    :grid="{
+                      slotHeight: '11px',
+                      slotWidth: '11px',
+                    }"
+                    :shapesOverride="{
+                      strokeColor: 'blue',
+                      strokeWidth: '1px',
+                      fillColor: ['rgba(0, 0, 255, 0.05)', 'rgba(0, 0, 255, 0.1)'],
+                    }"
+                  />
+                  <dfx-geometric-icon
+                    icon="dfx-mph-hexagon-triangle-square"
+                    :grid="{
+                      slotHeight: '11px',
+                      slotWidth: '11px',
+                    }"
+                    :shapesOverride="{
+                      strokeColor: 'blue',
+                      strokeWidth: '1px',
+                      fillColor: ['rgba(0, 0, 255, 0.05)', 'rgba(0, 0, 255, 0.1)'],
+                    }"
+                  />
+                </div>
+                <div class="flex">
+                  <dfx-shape-line-printer
+                    v-for="(shape, index) in 7"
+                    :key="index"
+                    opacity="1"
+                    color="rgba(0, 0, 255, 0.3)"
+                    :shape-colors="['black', 'blue']"
+                    :blend-mode="['normal']"
+                    :stroke-width="6"
+                    width="20px"
+                  />
+                </div>
+                <div class="text-sm">morphic at run-time</div>
               </div>
-              <div class="flex">
-                <dfx-shape-line-printer
-                  v-for="(shape, index) in 8"
-                  :key="index"
-                  opacity="1"
-                  color="rgba(0, 0, 255, 0.3)"
-                  :shape-colors="['black', 'blue']"
-                  :blend-mode="['normal']"
-                  :stroke-width="6"
-                  width="20px"
-                />
+              <div class="text-center text-xs text-blue-700">
+                Combining blueprint component with morphluid component you get smooth
+                transformations on UI
               </div>
-              <div class="text-sm">ready to use, no bundle</div>
-            </div>
-            <div class="text-xs text-blue-700">
-              No need of compile or package procecss. Include via CDN or download (package available
-              too).
             </div>
           </div>
           <div>
@@ -125,33 +191,96 @@ console.log(document.getElementById('get-started-home-button'), 888)
               <div class="text-sm">frameworks</div>
             </div>
             <div class="text-xs text-blue-700">
-              It's agnostic cross-frameworks, also, runs in vanilla javascript with ze<strong
+              It's agnostic cross-everything, also, runs in vanilla javascript with ze<strong
                 class="text-blue-700"
                 >ro</strong
               >
-              configuration.
+              configuration (in almost cases).
             </div>
           </div>
           <div>
-            <div class="h-[113px] mb-2 p-4 flex flex-col items-center rounded border">
+            <div
+              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
+            >
+              <div class="mb-2 items-center flex justify-center">
+                <i class="icon-web-components-color" />
+              </div>
+              <div class="flex">
+                <dfx-shape-line-printer
+                  v-for="(shape, index) in 7"
+                  :key="index"
+                  opacity="1"
+                  color="rgba(0, 0, 255, 0.2)"
+                  :shape-colors="['black', 'blue']"
+                  :blend-mode="['normal']"
+                  :stroke-width="6"
+                  width="20px"
+                />
+              </div>
+              <div class="text-sm">high-end components</div>
+            </div>
+            <div class="text-xs text-blue-700">
+              No need of compile or package procecss. Include via CDN or download (package
+              available).
+            </div>
+          </div>
+          <div>
+            <div
+              class="mb-2 p-4 outline-1 outline-blue-900 flex flex-col items-center rounded text-blue-700"
+            >
+              <div class="mb-2 items-center flex justify-center">
+                <dfx-geometric-icon
+                  icon="dfx-cmp-button"
+                  :grid="{
+                    slotHeight: '11px',
+                    slotWidth: '11px',
+                  }"
+                  :shapesOverride="{
+                    strokeColor: 'black',
+                    strokeWidth: '1px',
+                    fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
+                  }"
+                />
+              </div>
+              <div class="flex">
+                <dfx-shape-line-printer
+                  v-for="(shape, index) in 8"
+                  :key="index"
+                  opacity="1"
+                  color="rgba(0, 0, 255, 0.2)"
+                  :shape-colors="['black', 'blue']"
+                  :blend-mode="['normal']"
+                  :stroke-width="6"
+                  width="20px"
+                />
+              </div>
+              <div class="text-sm text-blue-900">
+                <strong class="text-sm text-blue-900">non</strong>-programmer friendly
+              </div>
+            </div>
+            <div class="text-xs text-center text-blue-900">
+              You can create components, apps, pages obtaining professional results even unskilled.
+            </div>
+          </div>
+          <div>
+            <div class="h-[113px] mb-2 p-2 pt-4 flex flex-col items-center rounded border">
               <div class="flex flex-row mb-1">
-                <div class="mr-1">
+                <div>
                   <i class="icon-machina" />
                 </div>
                 <div class="flex flex-col h-full">
-                  <div class="mb-1 leading-[0.8] text-sm">
-                    <span class="mr-1"><strong class="text-black">MACHINA</strong></span>
+                  <div class="mb-1 pl-1 leading-[0.8] text-sm">
+                    <span><strong class="text-black">MACHINA</strong></span>
                   </div>
                   <div class="flex justify-evenly">
                     <dfx-shape-line-printer
-                      v-for="(shape, index) in 8"
+                      v-for="(shape, index) in 7"
                       :key="index"
                       opacity="0.2"
                       stroke-width="7"
                       color="rgba(0, 0, 0, 1)"
                       :shape-colors="['black', 'blue']"
                       :blend-mode="['normal']"
-                      :stroke-width="6"
                       width="16px"
                     />
                   </div>
@@ -161,37 +290,31 @@ console.log(document.getElementById('get-started-home-button'), 888)
                 <strong>Demiurge architect board.</strong>
                 <br />
 
-                Official deus<strong class="text-black">fx</strong> editor studio.
+                Complete deus<strong class="text-black">fx</strong> editor studio
               </div>
             </div>
-            <div class="w-full" style="line-height: 0">
-              <dfx-button color="black" colorScheme="light" block variant="deus"
-                ><strong class="font-black text-white">go</strong>&nbsp;<span class="text-white"
-                  >machina</span
+            <div class="w-full" style="line-height: 0"></div>
+          </div>
+          <div>
+            <div class="mb-2 outline-blue-700 flex flex-col items-center rounded text-blue-700">
+              <dfx-button color="blue" colorScheme="light" width="100%" variant="deus"
+                ><strong class="font-black text-white">get</strong>&nbsp;<span class="text-white"
+                  >started</span
                 ></dfx-button
+              >
+              <dfx-button color="black" colorScheme="light" block variant="deus"
+                ><div style="--dfx-width: 100%">
+                  <strong class="font-black text-white" size="md" block>go</strong>&nbsp;<span
+                    class="text-white"
+                    >machina</span
+                  >
+                </div></dfx-button
               >
             </div>
           </div>
         </div>
-        <br />
-        <div style="display: flex; flex-direction: row; justify-content: center">
-          <router-link to="./guide">
-            <dfx-button colorScheme="dark" color="blue" size="lg" style="stroke-width: 5px">
-              <div class="text-white">get started</div>
-              <div class="ml-4">
-                <dfx-geometric-icon
-                  icon="dfx-tkt-start"
-                  width="32px"
-                  height="32px"
-                  :shapesOverride="{
-                    strokeColor: 'white',
-                    strokeWidth: '1px',
-                    fillColor: ['rgba(255, 255, 255, 0.05)', 'rgba(255, 255, 255, 0.2)'],
-                  }"
-                />
-              </div>
-            </dfx-button>
-          </router-link>
+        <div class="flex flex-row justify-end leading-none text-sm">
+          powered by <i class="icon-lit"></i>
         </div>
       </div>
     </div>
@@ -205,8 +328,8 @@ console.log(document.getElementById('get-started-home-button'), 888)
 
     .highlights {
       display: grid;
-      column-gap: 10px;
-      grid-template-columns: 1fr 1fr 1fr 1fr 0.1fr;
+      column-gap: 14px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-auto-rows: auto;
     }
   }
@@ -354,6 +477,69 @@ console.log(document.getElementById('get-started-home-button'), 888)
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320' width='320px' height='320px' xmlns:bx='https://boxy-svg.com'%3E%3Cdefs%3E%3Cbx:grid x='0' y='0' width='82.381' height='82.381'/%3E%3C/defs%3E%3Cpath d='M 0 -320 L 320 0 L 0 0 L 0 -320 Z' bx:shape='triangle 0 -320 320 320 0 0 1@94fa6d03' style='stroke: rgb(0, 0, 0); fill: rgb(0, 0, 0);' transform='matrix(1, 0, 0, -1, 0, 0)'/%3E%3Cpath d='M 319.975 319.957 L 170 169.975 L 319.975 20 L 319.975 319.957 Z' style='stroke-linecap: square; paint-order: fill; stroke-width: 36.042; stroke-miterlimit: 1; fill: rgb(35, 0, 0);'/%3E%3C/svg%3E");
+}
+
+.icon-web-components {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' d='m179.9 388l-76.16-132zm0 0h152.21l76.15-132l-76.15-132H179.9l-76.16 132zm-76.16-132l76.16-132z'/%3E%3Cpath fill='blue' d='M496 256L376 48H239.74l-43.84 76h136.21l76.15 132l-76.15 132H195.9l43.84 76H376z'/%3E%3Cpath fill='blue' d='m179.9 388l-76.16-132l76.16-132l43.84-76H136L16 256l120 208h87.74z'/%3E%3C/svg%3E");
+}
+
+.icon-web-components-color {
+  display: inline-block;
+  width: 39.2px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 209'%3E%3Cdefs%3E%3ClinearGradient id='SVGXUEztXkL' x1='0%25' x2='100%25' y1='50%25' y2='50%25'%3E%3Cstop offset='0%25' stop-color='%232a3b8f'/%3E%3Cstop offset='100%25' stop-color='%2329abe2'/%3E%3C/linearGradient%3E%3ClinearGradient id='SVGhzeGlcgt' x1='100%25' x2='0%25' y1='50%25' y2='50%25'%3E%3Cstop offset='0%25' stop-color='%23b4d44e'/%3E%3Cstop offset='100%25' stop-color='%23e7f716'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='%23166da5' d='m255.997 104.029l-27.805 46.82l-38.991-47.46l38.991-46.181z'/%3E%3Cpath fill='%238fdb69' d='m225.156 158.839l-42.347-50.656l-25.408 42.507l39.47 57.687z'/%3E%3Cpath fill='%23166da5' d='m224.676 48.898l-41.867 50.816l-25.408-42.506L196.871.16z'/%3E%3Cpath fill='url(%23SVGXUEztXkL)' d='M96.997 48.898h127.679L196.552.16h-71.43z' opacity='0.95'/%3E%3Cpath fill='url(%23SVGXUEztXkL)' d='M182.809 99.874h70.631l-25.408-42.826h-70.791' opacity='0.95'/%3E%3Cpath fill='url(%23SVGhzeGlcgt)' d='M225.156 158.999H96.838l28.124 48.739h71.909z' opacity='0.95'/%3E%3Cpath fill='%23010101' d='M124.962 207.738L64.878 103.869L125.761 0H59.924L0 103.869l59.924 103.869z'/%3E%3Cpath fill='url(%23SVGhzeGlcgt)' d='M182.809 108.024h70.631l-25.408 42.825h-70.791' opacity='0.95'/%3E%3C/svg%3E");
+}
+
+.icon-like {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='none' stroke='blue' stroke-linecap='round' stroke-linejoin='round' d='m24 10.27l-.595-.595c-4.32-4.322-11.327-4.322-15.648 0h0c-4.321 4.32-4.321 11.327 0 15.648l.594.595' stroke-width='1'/%3E%3Cpath fill='none' stroke='blue' stroke-linecap='round' stroke-linejoin='round' d='m39.674 25.921l.595-.595c4.33-4.33 4.33-11.348 0-15.678h0c-4.329-4.329-11.348-4.329-15.677 0l-.596.596L8.32 25.921l15.677 15.677zm-26.129 5.226L37.21 7.482m5.226 5.225L18.771 36.373m-5.203-15.671l-7.974-7.974m5.216-5.216l7.974 7.973' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+.icon-deusfx-color {
+  display: inline-block;
+  width: 100px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4Ny40MzkgMzIiIHhtbG5zOmJ4PSJodHRwczovL2JveHktc3ZnLmNvbSIgd2lkdGg9Ijk5Ljg0cHgiIGhlaWdodD0iMzJweCI+CiAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMC4yMDM3ODksIDAsIDAsIDAuMjAzNzg5LCAtNi4yMDA1LCAtMC4wMDAwMDkpIj4KICAgIDxlbGxpcHNlIHN0eWxlPSJmaWxsOiByZ2IoMiwgMCwgMjE2KTsgc3Ryb2tlLXdpZHRoOiAxOyIgY3g9Ijc4LjI1OSIgY3k9Ijc4LjExNyIgcng9Ijc4LjExNyIgcnk9Ijc4LjExNyIvPgogICAgPHJlY3Qgd2lkdGg9Ijc4LjI4NSIgaGVpZ2h0PSIxNTYuMTE1IiBzdHlsZT0iZmlsbDogcmdiYSgyMTgsIDAsIDI1NSwgMC42Mik7IHN0cm9rZS13aWR0aDogMTsiLz4KICAgIDxwYXRoIGQ9Ik0gNzEuMzkzIDc4LjY3NiBMIDIyNi41NDUgMjMzLjgyOCBMIDcxLjM5MyAyMzMuODI4IEwgNzEuMzkzIDc4LjY3NiBaIiBieDpzaGFwZT0idHJpYW5nbGUgNzEuMzkzIDc4LjY3NiAxNTUuMTUyIDE1NS4xNTIgMCAwIDFAYzJiMDMxZTYiIHN0eWxlPSJmaWxsOiByZ2IoMTk0LCAyMTYsIDYpOyBzdHJva2Utd2lkdGg6IDE7IHRyYW5zZm9ybS1ib3g6IGZpbGwtYm94OyB0cmFuc2Zvcm0tb3JpZ2luOiA1MCUgNTAlOyIgdHJhbnNmb3JtPSJtYXRyaXgoMCwgMSwgLTEsIDAsIDk4LjA5OTY1NywgLTc4LjY3NjAwMSkiLz4KICAgIDxwYXRoIGQ9Ik0gLTIxMi43MiAtMzUyLjUgTCAtMTM5LjcyNCAtMjc5LjUwNCBMIC0yMTIuNzIgLTI3OS41MDQgTCAtMjEyLjcyIC0zNTIuNSBaIiBieDpzaGFwZT0idHJpYW5nbGUgLTIxMi43MiAtMzUyLjUgNzIuOTk2IDcyLjk5NiAwIDAgMUBmZDhlMjUzNyIgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgZmlsbDogcmdiKDIxNiwgMCwgMSk7IHRyYW5zZm9ybS1vcmlnaW46IC0xNzYuMjI4cHggLTMxNi4wMDNweDsiIHRyYW5zZm9ybT0ibWF0cml4KDAsIC0xLCAxLCAwLCA0MzcuMDAwNDUsIDM5OC4xMjMzMTUpIi8+CiAgICA8cGF0aCBkPSJNIDQxMi4xMzYgLTc0LjkxMSBRIDQxMi4yMSAtNzQuOTg1IDQxMi4yODMgLTc0LjkxMSBMIDQ4NS4xNjcgLTAuODM4IFEgNDg1LjI0IC0wLjc2NCA0ODUuMDk0IC0wLjc2NCBMIDMzOS4zMjUgLTAuNzY0IFEgMzM5LjE3OSAtMC43NjQgMzM5LjI1MiAtMC44MzggWiIgYng6c2hhcGU9InRyaWFuZ2xlIDMzOS4xNzkgLTc0Ljk4NSAxNDYuMDYxIDc0LjIyMSAwLjUgMC4wMDEgMUBkNjIzNzVhOSIgc3R5bGU9InN0cm9rZTogcmdiKDAsIDAsIDApOyBmaWxsOiBub25lOyBzdHJva2UtbWl0ZXJsaW1pdDogNC40Mjsgc3Ryb2tlLXdpZHRoOiAycHg7IHZlY3Rvci1lZmZlY3Q6IG5vbi1zY2FsaW5nLXN0cm9rZTsiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIC0xLCAwLCAwKSIvPgogICAgPHBhdGggZD0iTSA0MTIuMDgxIDc4Ljk4IFEgNDEyLjE1OCA3OC45MDIgNDEyLjIzNSA3OC45OCBMIDQ4OC45NTEgMTU2Ljk0NyBRIDQ4OS4wMjggMTU3LjAyNSA0ODguODc0IDE1Ny4wMjUgTCAzMzUuNDQyIDE1Ny4wMjUgUSAzMzUuMjg4IDE1Ny4wMjUgMzM1LjM2NSAxNTYuOTQ3IFoiIGJ4OnNoYXBlPSJ0cmlhbmdsZSAzMzUuMjg4IDc4LjkwMiAxNTMuNzQgNzguMTIzIDAuNSAwLjAwMSAxQDdkYjQ5N2I1IiBzdHlsZT0ic3Ryb2tlOiByZ2IoMCwgMCwgMCk7IHN0cm9rZS13aWR0aDogMTsiLz4KICA8L2c+CiAgPGRlZnM+CiAgICA8Yng6Z3JpZCB4PSIwIiB5PSIwIiB3aWR0aD0iMzYuMjUxIiBoZWlnaHQ9IjM2LjI1MSIvPgogIDwvZGVmcz4KPC9zdmc+');
+}
+
+.icon-recycle {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='blue' d='M11 20h11.5v-.5l-3.736-6.743M11 20c1.933 0 3.5-3.5 3.5-3.5M11 20c1.933 0 3.5 3.5 3.5 3.5M17.79 11L12.25 1h-.5L8.025 7.73M17.789 11c-.966-1.674-4.781-1.281-4.781-1.281M17.789 11c-.88-1.657 1.281-4.781 1.281-4.781M7.05 9.484L1.5 19.5v.5H9M7.05 9.484c-.88 1.657 1.282 4.781 1.282 4.781M7.05 9.485c-.967 1.673-4.781 1.28-4.781 1.28' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+.icon-components-group {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath fill='blue' d='m33.53 21.58l-4.94-2.83v-5.66a1 1 0 0 0-.51-.87L22.64 9.1a1 1 0 0 0-1 0l-5.44 3.12a1 1 0 0 0-.51.87v5.66l-4.94 2.83a1 1 0 0 0-.5.87v6.24a1 1 0 0 0 .5.86l5.45 3.12a1 1 0 0 0 1 0l4.95-2.83l4.95 2.83a1 1 0 0 0 .5.14a1 1 0 0 0 .49-.14l5.45-3.12a1 1 0 0 0 .5-.86v-6.24a1 1 0 0 0-.51-.87M22.14 11.12l4.45 2.55V19l-4.46 2.56l-4.44-2.6v-5.29Zm-5.45 19.53l-4.44-2.54V23l4.68-2.68l4.4 2.57V28ZM32 28.11l-4.44 2.54L22.93 28v-5.07l4.46-2.57L32 23Z' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='blue' d='M7 27.43a1 1 0 0 1-1-1V19.9a1 1 0 0 1 .5-.9l4.95-2.83v-5.63a1 1 0 0 1 .5-.87l5.21-3a1 1 0 0 1 1.37.37a1 1 0 0 1-.38 1.37l-4.7 2.68v5.66a1 1 0 0 1-.51.87L8 20.48v5.95a1 1 0 0 1-1 1' class='clr-i-outline clr-i-outline-path-2'/%3E%3Cpath fill='blue' d='M3 25.05a1 1 0 0 1-1-1v-6.52a1 1 0 0 1 .5-.86l5-2.84V8.17a1 1 0 0 1 .5-.86l5.25-3a1 1 0 0 1 1 1.74l-4.8 2.7v5.66a1 1 0 0 1-.51.87L4 18.11v5.94a1 1 0 0 1-1 1' class='clr-i-outline clr-i-outline-path-3'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
+}
+
+.icon-lit {
+  display: inline-flex;
+  min-height: 20px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MjUgMjAwIiBpZD0iZnVsbCI+Cjx2aWV3IGlkPSJmbGFtZSIgdmlld0JveD0iLTEzMi41IDAgMTYwIDIwMCIvPgo8dmlldyBpZD0ibmFtZSIgdmlld0JveD0iMzMyLjUgMTI3LjUgMTg1IDEyMiIgLz4KPHN5bWJvbCBpZD0ibmFtZS1zeW1ib2wiIHZpZXdCb3g9IjI0MCA3OCAxODUgMTIyIj4KPHBhdGggZmlsbD0idmFyKC0tbGl0LWxvZ28tdGV4dC1jb2xvciwgYmxhY2spIiBkPSJNMzk0LjUgNzh2MjguOEg0MjV2MTUuNmgtMzAuNVYxNThjMCAzLjYuMSA3LjIuNSAxMC4zLjggNS4zIDQgMTAuNSA4LjQgMTIuNSA1LjcgMi42IDkuNyAyLjEgMjEuNiAxLjdsLTIuOSAxNy4yYy0uOC40LTQgLjMtNyAuMy03IDAtMzMuNCAyLjUtMzguOC0yNC43LS45LTQuNy0uNy05LjUtLjctMTYuOXYtMzUuOEgzNjJsLjItMTUuOWgxMy40Vjc4em0tNTEuNyAyOC43djkxLjVIMzI0di05MS41em0wLTI4Ljd2MTYuM2gtMTlWNzh6bS04My42IDEwMi4yaDQ4LjJsLTE4IDE4SDI0MFY3OGgxOS4yeiIvPgo8L3N5bWJvbD4KPHN5bWJvbCBpZD0iZmxhbWUtc3ltYm9sIiB2aWV3Qm94PSIwIDAgMTYwIDIwMCI+CjxwYXRoIGZpbGw9InZhcigtLWxpdC1sb2dvLWRhcmstY3lhbiwgIzAwZThmZikiIGQ9Ik00MCAxMjBsMjAtNjBsOTAgOTBsLTMwIDUwbC00MC00MGgtMjAiLz4KPHBhdGggZmlsbD0idmFyKC0tbGl0LWxvZ28tZGFyay1ibHVlLCAjMjgzMTk4KSIgZD0iTTgwIDE2MCBMODAgODAgTDEyMCA0MCBMIDEyMCAxMjAgTTAgMTYwIEw0MCAyMDAgTDQwIDEyMCBMMjAgMTIwIi8+CjxwYXRoIGZpbGw9InZhcigtLWxpdC1sb2dvLWJsdWUsICMzMjRmZmYpIiBkPSJNNDAgMTIwdi04MGw0MC00MHY4ME0xMjAgMjAwdi04MGw0MC00MHY4ME0wIDE2MHYtODBsNDAgNDAiLz4KPHBhdGggZmlsbD0idmFyKC0tbGl0LWxvZ28tY3lhbiwgIzBmZikiIGQ9Ik00MCAyMDB2LTgwbDQwIDQwIi8+Cjwvc3ltYm9sPgo8dXNlIGhyZWY9IiNuYW1lLXN5bWJvbCIgeD0iMzMyLjUiIHk9IjEyNy41IiB0cmFuc2Zvcm09InNjYWxlKDAuNjEpIj48L3VzZT4KPHVzZSBocmVmPSIjZmxhbWUtc3ltYm9sIiB4PSItMTMyLjUiPjwvdXNlPgo8L3N2Zz4K');
 }
 
 .gradient-text {
