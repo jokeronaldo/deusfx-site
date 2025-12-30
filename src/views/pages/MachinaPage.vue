@@ -63,7 +63,7 @@ onMounted(() => {
 <style>
 @layer layour-content {
   .material-page {
-    color: white;
+    color: #333;
   }
 }
 </style>

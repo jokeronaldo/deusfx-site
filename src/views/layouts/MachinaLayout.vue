@@ -20,6 +20,9 @@ const layoutStore = useLayoutStore()
 <style>
 /* Layout structure */
 @layer layout {
+  body {
+    background-color: white;
+  }
   .layout-machina {
     --layout-default-prose-width: 3fr;
     --layout-default-content-width: 9fr;

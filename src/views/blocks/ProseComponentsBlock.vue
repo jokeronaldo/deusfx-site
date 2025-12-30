@@ -16,29 +16,33 @@
       "
     >
       <div class="flex flex-col h-screen --r--items-center xxx">
-        <div class="pb-2 pt-4 px-3" style="box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1)">
-          <router-link :to="{ name: 'Home' }">
-            <DeusFxLogo color="blue" colorDeus="white" invertedColor="white" width="100px" />
-          </router-link>
-        </div>
-        <div class="mt-5">
-          <h3 class="mb-1 text-3xl text-white/90 text-center font-[Inter] font-thin special-title">
-            web <strong class="font-semibold">components</strong>
-          </h3>
-          <div class="flex justify-center w-full">
-            <dfx-shape-line-printer
-              v-for="(shape, index) in 8"
-              :key="index"
-              opacity="0.2"
-              :blend-mode="['color-dodge', 'overlay', 'plus-lighter', 'lighten']"
-              stroke-width="5px"
-              width="32px"
-            />
+        <div class="sticky top-0 left w-full z-10">
+          <div class="pb-2 pt-4 px-3" style="box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1)">
+            <router-link :to="{ name: 'Home' }">
+              <DeusFxLogo color="blue" colorDeus="white" invertedColor="white" width="100px" />
+            </router-link>
+          </div>
+          <div class="mt-5">
+            <h3
+              class="mb-1 text-3xl text-white/90 text-center font-[Inter] font-thin special-title"
+            >
+              web <strong class="font-semibold">components</strong>
+            </h3>
+            <div class="flex justify-center w-full">
+              <dfx-shape-line-printer
+                v-for="(shape, index) in 8"
+                :key="index"
+                opacity="0.2"
+                :blend-mode="['color-dodge', 'overlay', 'plus-lighter', 'lighten']"
+                stroke-width="5px"
+                width="32px"
+              />
+            </div>
           </div>
         </div>
-        <div class="grow option-items items-center justify-center px-4">
+        <div class="grow option-items items-center justify-center my-8 px-4">
           <div
-            v-for="(category, index) in componentStore.categories"
+            v-for="(category, index) in componentStore.components"
             :key="index"
             class="flex flex-col justify-center items-center option-item"
           >
@@ -48,7 +52,7 @@
               secondaryColor="blue"
               size="lg"
               variant="link"
-              icon
+              icona
               :ref="`button${category.id}ref`"
               :_id="category.id"
               @item-click="(event) => selectCategory(event, category)"
@@ -67,7 +71,7 @@
             <div class="font-thin text-sm text-white" v-html="category.title" />
           </div>
         </div>
-        <div class="flex justify-center mb-4">
+        <div class="flex justify-center mb-4 pb-8">
           <dfx-shapeshifter v-for="(shape, index) in 5" :key="index" width="32px" />
         </div>
       </div>

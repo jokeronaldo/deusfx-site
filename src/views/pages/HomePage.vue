@@ -29,13 +29,50 @@ console.log(document.getElementById('get-started-home-button'), 888)
     <div class="flex h-full items-center-safe justify-evenly">
       <div class="prose prose-2xl">
         <div class="text-center">
+          <h1 class="mb-0">Web components</h1>
           <h1 class="mb-0">
-            Web component <span style="color: blue">blueprint<strong></strong></span>
+            <span style="color: blue">blueprint<strong></strong></span> architecture.
           </h1>
-          <h1 class="mb-0">archicture UI mainframe.</h1>
         </div>
         <br />
         <div class="highlights">
+          <div>
+            <div
+              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
+            >
+              <div class="mb-2 w-full flex justify-center">
+                <dfx-geometric-icon
+                  icon="dfx-cmp-base"
+                  :grid="{
+                    slotHeight: '11px',
+                    slotWidth: '11px',
+                  }"
+                  :shapesOverride="{
+                    strokeColor: 'blue',
+                    strokeWidth: '1px',
+                    fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
+                  }"
+                />
+              </div>
+              <div class="flex">
+                <dfx-shape-line-printer
+                  v-for="(shape, index) in 7"
+                  :key="index"
+                  opacity="1"
+                  color="rgba(0, 0, 255, 0.3)"
+                  :shape-colors="['black', 'blue']"
+                  :blend-mode="['normal']"
+                  :stroke-width="6"
+                  width="20px"
+                />
+              </div>
+              <div class="text-sm">blueprint architecture</div>
+            </div>
+            <div class="text-center text-xs text-blue-700">
+              Clear layers split, minimalistic tests capable, simple but robust. Easy component
+              interface changes
+            </div>
+          </div>
           <div class="mb-6">
             <div
               class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
@@ -67,46 +104,6 @@ console.log(document.getElementById('get-started-home-button'), 888)
               <div
                 class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
               >
-                <div class="mb-2 w-full flex justify-center">
-                  <i class="icon-web-components" />
-                  <dfx-geometric-icon
-                    icon="dfx-cmp-base"
-                    :grid="{
-                      slotHeight: '10px',
-                      slotWidth: '10px',
-                    }"
-                    :shapesOverride="{
-                      strokeColor: 'blue',
-                      strokeWidth: '1px',
-                      fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
-                    }"
-                  />
-                </div>
-                <div class="flex">
-                  <dfx-shape-line-printer
-                    v-for="(shape, index) in 7"
-                    :key="index"
-                    opacity="1"
-                    color="rgba(0, 0, 255, 0.3)"
-                    :shape-colors="['black', 'blue']"
-                    :blend-mode="['normal']"
-                    :stroke-width="6"
-                    width="20px"
-                  />
-                </div>
-                <div class="text-sm">web component blueprint</div>
-              </div>
-              <div class="text-center text-xs text-blue-700">
-                Clear layers split, minimalistic tests capable, simple but robust. One blueprint for
-                any renderer
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div
-                class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
-              >
                 <div class="mb-2 w-full flex justify-evenly">
                   <dfx-geometric-icon
                     icon="dfx-mph-triangle-intersect-square"
@@ -120,30 +117,6 @@ console.log(document.getElementById('get-started-home-button'), 888)
                       fillColor: ['rgba(0, 0, 255, 0.05)', 'rgba(0, 0, 255, 0.1)'],
                     }"
                   />
-                  <dfx-geometric-icon
-                    icon="dfx-mph-triangle-inside-square"
-                    :grid="{
-                      slotHeight: '11px',
-                      slotWidth: '11px',
-                    }"
-                    :shapesOverride="{
-                      strokeColor: 'blue',
-                      strokeWidth: '1px',
-                      fillColor: ['rgba(0, 0, 255, 0.05)', 'rgba(0, 0, 255, 0.1)'],
-                    }"
-                  />
-                  <dfx-geometric-icon
-                    icon="dfx-mph-hexagon-triangle-square"
-                    :grid="{
-                      slotHeight: '11px',
-                      slotWidth: '11px',
-                    }"
-                    :shapesOverride="{
-                      strokeColor: 'blue',
-                      strokeWidth: '1px',
-                      fillColor: ['rgba(0, 0, 255, 0.05)', 'rgba(0, 0, 255, 0.1)'],
-                    }"
-                  />
                 </div>
                 <div class="flex">
                   <dfx-shape-line-printer
@@ -157,12 +130,76 @@ console.log(document.getElementById('get-started-home-button'), 888)
                     width="20px"
                   />
                 </div>
-                <div class="text-sm">morphic at run-time</div>
+                <div class="text-sm">runtime structure control</div>
               </div>
               <div class="text-center text-xs text-blue-700">
                 Combining blueprint component with morphluid component you get smooth
                 transformations on UI
               </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="mb-2 p-4 outline-1 outline-blue-900 flex flex-col items-center rounded text-blue-700"
+            >
+              <div class="mb-2 items-center flex justify-center">
+                <dfx-geometric-icon
+                  icon="dfx-cmp-button"
+                  :grid="{
+                    slotHeight: '11px',
+                    slotWidth: '11px',
+                  }"
+                  :shapesOverride="{
+                    strokeColor: 'black',
+                    strokeWidth: '1px',
+                    fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
+                  }"
+                />
+              </div>
+              <div class="flex">
+                <dfx-shape-line-printer
+                  v-for="(shape, index) in 8"
+                  :key="index"
+                  opacity="1"
+                  color="rgba(0, 0, 255, 0.2)"
+                  :shape-colors="['black', 'blue']"
+                  :blend-mode="['normal']"
+                  :stroke-width="6"
+                  width="20px"
+                />
+              </div>
+              <div class="text-sm text-blue-700">
+                <strong class="text-sm text-blue-700">non</strong>-programmer friendly
+              </div>
+            </div>
+            <div class="text-xs text-center text-blue-700">
+              You can create components, apps, pages obtaining professional results even unskilled.
+            </div>
+          </div>
+          <div>
+            <div
+              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
+            >
+              <div class="mb-2 items-center flex justify-center">
+                <i class="icon-web-components text-blue-500" />
+              </div>
+              <div class="flex">
+                <dfx-shape-line-printer
+                  v-for="(shape, index) in 7"
+                  :key="index"
+                  opacity="1"
+                  color="rgba(0, 0, 255, 0.2)"
+                  :shape-colors="['black', 'blue']"
+                  :blend-mode="['normal']"
+                  :stroke-width="6"
+                  width="20px"
+                />
+              </div>
+              <div class="text-sm">high-end components</div>
+            </div>
+            <div class="text-xs text-blue-700">
+              No need of compile or package procecss. Include via CDN or download (package
+              available).
             </div>
           </div>
           <div>
@@ -198,70 +235,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
               configuration (in almost cases).
             </div>
           </div>
-          <div>
-            <div
-              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
-            >
-              <div class="mb-2 items-center flex justify-center">
-                <i class="icon-web-components-color" />
-              </div>
-              <div class="flex">
-                <dfx-shape-line-printer
-                  v-for="(shape, index) in 7"
-                  :key="index"
-                  opacity="1"
-                  color="rgba(0, 0, 255, 0.2)"
-                  :shape-colors="['black', 'blue']"
-                  :blend-mode="['normal']"
-                  :stroke-width="6"
-                  width="20px"
-                />
-              </div>
-              <div class="text-sm">high-end components</div>
-            </div>
-            <div class="text-xs text-blue-700">
-              No need of compile or package procecss. Include via CDN or download (package
-              available).
-            </div>
-          </div>
-          <div>
-            <div
-              class="mb-2 p-4 outline-1 outline-blue-900 flex flex-col items-center rounded text-blue-700"
-            >
-              <div class="mb-2 items-center flex justify-center">
-                <dfx-geometric-icon
-                  icon="dfx-cmp-button"
-                  :grid="{
-                    slotHeight: '11px',
-                    slotWidth: '11px',
-                  }"
-                  :shapesOverride="{
-                    strokeColor: 'black',
-                    strokeWidth: '1px',
-                    fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
-                  }"
-                />
-              </div>
-              <div class="flex">
-                <dfx-shape-line-printer
-                  v-for="(shape, index) in 8"
-                  :key="index"
-                  opacity="1"
-                  color="rgba(0, 0, 255, 0.2)"
-                  :shape-colors="['black', 'blue']"
-                  :blend-mode="['normal']"
-                  :stroke-width="6"
-                  width="20px"
-                />
-              </div>
-              <div class="text-sm text-blue-900">
-                <strong class="text-sm text-blue-900">non</strong>-programmer friendly
-              </div>
-            </div>
-            <div class="text-xs text-center text-blue-900">
-              You can create components, apps, pages obtaining professional results even unskilled.
-            </div>
-          </div>
+
           <div>
             <div class="h-[113px] mb-2 p-2 pt-4 flex flex-col items-center rounded border">
               <div class="flex flex-row mb-1">
@@ -314,7 +288,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
           </div>
         </div>
         <div class="flex flex-row justify-end leading-none text-sm">
-          powered by <i class="icon-lit"></i>
+          made upon <i class="icon-lit"></i>
         </div>
       </div>
     </div>
@@ -364,29 +338,38 @@ console.log(document.getElementById('get-started-home-button'), 888)
 
 .icon-vue {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='blue' d='M24.9 3.9L16 19.4L7.1 3.9H2l14 24.3L30 3.9z'/%3E%3Cpath fill='blue' d='m16 9.5l-3.2-5.6H8.1L16 17.5l7.9-13.6h-4.6z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='rgba(0, 0, 255, 0.5)' d='M24.9 3.9L16 19.4L7.1 3.9H2l14 24.3L30 3.9z'/%3E%3Cpath fill='rgba(0, 0, 255, 0.5)' d='m16 9.5l-3.2-5.6H8.1L16 17.5l7.9-13.6h-4.6z'/%3E%3C/svg%3E");
 }
 
 .icon-react {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none'%3E%3Cg fill='blue' clip-path='url(%23SVGXv8lpc2Y)'%3E%3Cpath d='M24 11.689c0-1.59-1.991-3.097-5.044-4.031c.705-3.111.392-5.587-.988-6.38a2.15 2.15 0 0 0-1.096-.273v1.09c.225 0 .406.045.558.128c.665.382.954 1.834.729 3.703c-.054.46-.142.944-.25 1.438a24 24 0 0 0-3.106-.533a24 24 0 0 0-2.035-2.446c1.595-1.482 3.092-2.294 4.11-2.294V1c-1.346 0-3.107.959-4.888 2.622C10.21 1.97 8.448 1.02 7.103 1.02v1.09c1.013 0 2.515.808 4.11 2.28c-.685.72-1.37 1.536-2.021 2.441a23 23 0 0 0-3.111.538q-.168-.734-.255-1.418c-.23-1.87.054-3.322.715-3.708c.146-.088.337-.128.562-.128v-1.09c-.41 0-.783.088-1.105.273c-1.375.793-1.683 3.263-.974 6.365C1.981 8.603 0 10.104 0 11.689c0 1.59 1.991 3.097 5.044 4.03c-.705 3.112-.392 5.588.988 6.38c.318.186.69.274 1.1.274c1.346 0 3.107-.959 4.888-2.622c1.78 1.653 3.541 2.602 4.887 2.602a2.2 2.2 0 0 0 1.105-.274c1.375-.792 1.683-3.262.974-6.364C22.019 14.781 24 13.274 24 11.689m-6.37-3.263a22 22 0 0 1-.66 1.932a26 26 0 0 0-1.345-2.319q1.044.153 2.006.387m-2.24 5.21a26 26 0 0 1-1.179 1.869a25.5 25.5 0 0 1-4.412.005a25.5 25.5 0 0 1-2.201-3.806a26 26 0 0 1 2.192-3.82a25.5 25.5 0 0 1 4.411-.006q.61.875 1.184 1.86q.557.961 1.018 1.946a27 27 0 0 1-1.013 1.952M16.97 13c.264.656.49 1.311.675 1.947c-.64.157-1.316.289-2.015.391A27 27 0 0 0 16.97 13m-4.96 5.22q-.684-.706-1.36-1.566c.44.02.89.035 1.345.035q.691.001 1.36-.035c-.44.573-.895 1.096-1.345 1.566m-3.64-2.882a22 22 0 0 1-2.006-.386c.181-.631.406-1.282.66-1.932c.201.39.412.782.642 1.174q.345.587.704 1.144m3.615-10.18q.684.706 1.36 1.566c-.44-.02-.89-.035-1.345-.035q-.691-.001-1.36.035c.44-.573.895-1.096 1.345-1.566M8.365 8.04a27 27 0 0 0-1.34 2.333a21 21 0 0 1-.675-1.947c.64-.152 1.316-.284 2.015-.386m-4.427 6.124c-1.732-.738-2.852-1.707-2.852-2.475s1.12-1.742 2.852-2.475c.42-.181.88-.343 1.355-.494c.279.958.646 1.956 1.1 2.979a23 23 0 0 0-1.085 2.964a15 15 0 0 1-1.37-.499m2.632 6.99c-.665-.38-.954-1.834-.729-3.702c.054-.46.142-.945.25-1.439c.958.235 2.005.416 3.106.534a24 24 0 0 0 2.035 2.446c-1.595 1.482-3.092 2.294-4.11 2.294a1.2 1.2 0 0 1-.552-.132m11.604-3.727c.23 1.869-.054 3.322-.715 3.708c-.146.088-.337.127-.562.127c-1.013 0-2.515-.807-4.11-2.28a23 23 0 0 0 2.021-2.44a23 23 0 0 0 3.111-.538q.171.74.255 1.423m1.883-3.263c-.42.181-.88.343-1.355.494a23.5 23.5 0 0 0-1.1-2.979c.45-1.017.811-2.01 1.085-2.964q.728.227 1.375.499c1.732.738 2.852 1.707 2.852 2.475c-.005.768-1.125 1.742-2.857 2.475'/%3E%3Cpath d='M11.995 13.925a2.236 2.236 0 1 0 0-4.472a2.236 2.236 0 0 0 0 4.472'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='SVGXv8lpc2Y'%3E%3Cpath fill='%23fff' d='M0 0h24v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none'%3E%3Cg fill='rgba(0, 0, 255, 0.5)' clip-path='url(%23SVGXv8lpc2Y)'%3E%3Cpath d='M24 11.689c0-1.59-1.991-3.097-5.044-4.031c.705-3.111.392-5.587-.988-6.38a2.15 2.15 0 0 0-1.096-.273v1.09c.225 0 .406.045.558.128c.665.382.954 1.834.729 3.703c-.054.46-.142.944-.25 1.438a24 24 0 0 0-3.106-.533a24 24 0 0 0-2.035-2.446c1.595-1.482 3.092-2.294 4.11-2.294V1c-1.346 0-3.107.959-4.888 2.622C10.21 1.97 8.448 1.02 7.103 1.02v1.09c1.013 0 2.515.808 4.11 2.28c-.685.72-1.37 1.536-2.021 2.441a23 23 0 0 0-3.111.538q-.168-.734-.255-1.418c-.23-1.87.054-3.322.715-3.708c.146-.088.337-.128.562-.128v-1.09c-.41 0-.783.088-1.105.273c-1.375.793-1.683 3.263-.974 6.365C1.981 8.603 0 10.104 0 11.689c0 1.59 1.991 3.097 5.044 4.03c-.705 3.112-.392 5.588.988 6.38c.318.186.69.274 1.1.274c1.346 0 3.107-.959 4.888-2.622c1.78 1.653 3.541 2.602 4.887 2.602a2.2 2.2 0 0 0 1.105-.274c1.375-.792 1.683-3.262.974-6.364C22.019 14.781 24 13.274 24 11.689m-6.37-3.263a22 22 0 0 1-.66 1.932a26 26 0 0 0-1.345-2.319q1.044.153 2.006.387m-2.24 5.21a26 26 0 0 1-1.179 1.869a25.5 25.5 0 0 1-4.412.005a25.5 25.5 0 0 1-2.201-3.806a26 26 0 0 1 2.192-3.82a25.5 25.5 0 0 1 4.411-.006q.61.875 1.184 1.86q.557.961 1.018 1.946a27 27 0 0 1-1.013 1.952M16.97 13c.264.656.49 1.311.675 1.947c-.64.157-1.316.289-2.015.391A27 27 0 0 0 16.97 13m-4.96 5.22q-.684-.706-1.36-1.566c.44.02.89.035 1.345.035q.691.001 1.36-.035c-.44.573-.895 1.096-1.345 1.566m-3.64-2.882a22 22 0 0 1-2.006-.386c.181-.631.406-1.282.66-1.932c.201.39.412.782.642 1.174q.345.587.704 1.144m3.615-10.18q.684.706 1.36 1.566c-.44-.02-.89-.035-1.345-.035q-.691-.001-1.36.035c.44-.573.895-1.096 1.345-1.566M8.365 8.04a27 27 0 0 0-1.34 2.333a21 21 0 0 1-.675-1.947c.64-.152 1.316-.284 2.015-.386m-4.427 6.124c-1.732-.738-2.852-1.707-2.852-2.475s1.12-1.742 2.852-2.475c.42-.181.88-.343 1.355-.494c.279.958.646 1.956 1.1 2.979a23 23 0 0 0-1.085 2.964a15 15 0 0 1-1.37-.499m2.632 6.99c-.665-.38-.954-1.834-.729-3.702c.054-.46.142-.945.25-1.439c.958.235 2.005.416 3.106.534a24 24 0 0 0 2.035 2.446c-1.595 1.482-3.092 2.294-4.11 2.294a1.2 1.2 0 0 1-.552-.132m11.604-3.727c.23 1.869-.054 3.322-.715 3.708c-.146.088-.337.127-.562.127c-1.013 0-2.515-.807-4.11-2.28a23 23 0 0 0 2.021-2.44a23 23 0 0 0 3.111-.538q.171.74.255 1.423m1.883-3.263c-.42.181-.88.343-1.355.494a23.5 23.5 0 0 0-1.1-2.979c.45-1.017.811-2.01 1.085-2.964q.728.227 1.375.499c1.732.738 2.852 1.707 2.852 2.475c-.005.768-1.125 1.742-2.857 2.475'/%3E%3Cpath d='M11.995 13.925a2.236 2.236 0 1 0 0-4.472a2.236 2.236 0 0 0 0 4.472'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='SVGXv8lpc2Y'%3E%3Cpath fill='rgba(0, 0, 255, 0.5)' d='M0 0h24v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/g%3E%3C/svg%3E");
 }
 
 .icon-angular {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='blue' d='M13.24 16.859h5.51l-2.755-6.542zM15.995.01L.917 5.317l2.297 19.677l12.781 6.995l12.786-6.984l2.297-19.688L15.995.015zm9.411 24.396H21.89l-1.896-4.667h-8l-1.896 4.667H6.582l9.411-20.865z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='rgba(0, 0, 255, 0.5)' d='M13.24 16.859h5.51l-2.755-6.542zM15.995.01L.917 5.317l2.297 19.677l12.781 6.995l12.786-6.984l2.297-19.688L15.995.015zm9.411 24.396H21.89l-1.896-4.667h-8l-1.896 4.667H6.582l9.411-20.865z'/%3E%3C/svg%3E");
+}
+
+.icon-tailwind {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 154'%3E%3Cdefs%3E%3ClinearGradient id='SVG80JqDb2a' x1='-2.778%25' x2='100%25' y1='32%25' y2='67.556%25'%3E%3Cstop offset='0%25' stop-color='blue'/%3E%3Cstop offset='100%25' stop-color='%230ed7b5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23SVG80JqDb2a)' d='M128 0Q76.8 0 64 51.2Q83.2 25.6 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8q51.2 0 64-51.2q-19.2 25.6-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0M64 76.8q-51.2 0-64 51.2q19.2-25.6 44.8-19.2c9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6q51.2 0 64-51.2q-19.2 25.6-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8'/%3E%3C/svg%3E");
 }
 
 .icon-svelte {
@@ -395,7 +378,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
   height: 32px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Cpath fill='none' stroke='blue' d='m9.625 8.357l-5.088 3.18m2.968-1.855a3.5 3.5 0 0 1-3.71-5.937l4.241-2.65A3.5 3.5 0 0 1 12.405 6.5M7.536 5.296a3.5 3.5 0 0 1 3.71 5.936l-4.24 2.65A3.5 3.5 0 0 1 2.614 8.5m2.8-1.88l5.09-3.179' stroke-width='1'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Cpath fill='none' stroke='rgba(0, 0, 255, 0.5)' d='m9.625 8.357l-5.088 3.18m2.968-1.855a3.5 3.5 0 0 1-3.71-5.937l4.241-2.65A3.5 3.5 0 0 1 12.405 6.5M7.536 5.296a3.5 3.5 0 0 1 3.71 5.936l-4.24 2.65A3.5 3.5 0 0 1 2.614 8.5m2.8-1.88l5.09-3.179' stroke-width='1'/%3E%3C/svg%3E");
 }
 
 .icon-cloudflare {
@@ -414,15 +397,6 @@ console.log(document.getElementById('get-started-home-button'), 888)
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='blue' d='M16 6c-2.648 0-4.95 1.238-6.594 3.063C9.27 9.046 9.148 9 9 9c-2.2 0-4 1.8-4 4c-1.73 1.055-3 2.836-3 5c0 3.3 2.7 6 6 6h5v-2H8c-2.219 0-4-1.781-4-4a4.01 4.01 0 0 1 2.438-3.688l.687-.28l-.094-.75A6 6 0 0 1 7 13a1.984 1.984 0 0 1 2.469-1.938l.625.157l.375-.5A7 7 0 0 1 16 8c3.277 0 6.012 2.254 6.781 5.281l.188.781l.843-.03c.211-.012.258-.032.188-.032c2.219 0 4 1.781 4 4s-1.781 4-4 4h-5v2h5c3.3 0 6-2.7 6-6c0-3.156-2.488-5.684-5.594-5.906C23.184 8.574 19.926 6 16 6m-1 12v8h-3l4 4l4-4h-3v-8z'/%3E%3C/svg%3E");
-}
-
-.icon-tailwind {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 154'%3E%3Cdefs%3E%3ClinearGradient id='SVG80JqDb2a' x1='-2.778%25' x2='100%25' y1='32%25' y2='67.556%25'%3E%3Cstop offset='0%25' stop-color='blue'/%3E%3Cstop offset='100%25' stop-color='%230ed7b5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23SVG80JqDb2a)' d='M128 0Q76.8 0 64 51.2Q83.2 25.6 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8q51.2 0 64-51.2q-19.2 25.6-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0M64 76.8q-51.2 0-64 51.2q19.2-25.6 44.8-19.2c9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6q51.2 0 64-51.2q-19.2 25.6-44.8 19.2c-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8'/%3E%3C/svg%3E");
 }
 
 .icon-webpack {
@@ -485,7 +459,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
   height: 32px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' d='m179.9 388l-76.16-132zm0 0h152.21l76.15-132l-76.15-132H179.9l-76.16 132zm-76.16-132l76.16-132z'/%3E%3Cpath fill='blue' d='M496 256L376 48H239.74l-43.84 76h136.21l76.15 132l-76.15 132H195.9l43.84 76H376z'/%3E%3Cpath fill='blue' d='m179.9 388l-76.16-132l76.16-132l43.84-76H136L16 256l120 208h87.74z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='none' d='m179.9 388l-76.16-132zm0 0h152.21l76.15-132l-76.15-132H179.9l-76.16 132zm-76.16-132l76.16-132z'/%3E%3Cpath fill='rgba(0, 0, 255, 0.5)' d='M496 256L376 48H239.74l-43.84 76h136.21l76.15 132l-76.15 132H195.9l43.84 76H376z'/%3E%3Cpath fill='rgba(0, 0, 255, 0.7)' d='m179.9 388l-76.16-132l76.16-132l43.84-76H136L16 256l120 208h87.74z'/%3E%3C/svg%3E");
 }
 
 .icon-web-components-color {

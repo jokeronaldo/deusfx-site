@@ -60,6 +60,51 @@ export const useComponentStore = defineStore('component', () => {
       id: 'navigation',
       title: 'navigation',
     },
+    {
+      icon: 'dfx-cmp-editors',
+      id: 'editors',
+      title: 'editors',
+    },
+    {
+      icon: 'dfx-cmp-overlay',
+      id: 'overlay',
+      title: 'overlay',
+    },
+    {
+      icon: 'dfx-cmp-navigation',
+      id: 'navigation',
+      title: 'navigation',
+    },
+    {
+      icon: 'dfx-cmp-editors',
+      id: 'editors',
+      title: 'editors',
+    },
+    {
+      icon: 'dfx-cmp-overlay',
+      id: 'overlay',
+      title: 'overlay',
+    },
+    {
+      icon: 'dfx-cmp-navigation',
+      id: 'navigation',
+      title: 'navigation',
+    },
+    {
+      icon: 'dfx-cmp-editors',
+      id: 'editors',
+      title: 'editors',
+    },
+    {
+      icon: 'dfx-cmp-overlay',
+      id: 'overlay',
+      title: 'overlay',
+    },
+    {
+      icon: 'dfx-cmp-navigation',
+      id: 'navigation',
+      title: 'navigation',
+    },
   ])
   const components = ref([
     {
@@ -70,7 +115,7 @@ export const useComponentStore = defineStore('component', () => {
     },
     {
       category: 'basics',
-      icon: 'dfx-cmp-base',
+      icon: 'dfx-cmp-basics',
       id: 'base',
       title: 'base',
       routeName: 'ComponentBase',
@@ -99,6 +144,30 @@ export const useComponentStore = defineStore('component', () => {
       icon: 'dfx-edt-angelo',
       id: 'switchs',
       title: 'switchs',
+    },
+    {
+      category: 'forms',
+      icon: 'dfx-edt-angelo',
+      id: 'navdrawer',
+      title: 'navdrawer',
+    },
+    {
+      category: 'forms',
+      icon: 'dfx-edt-angelo',
+      id: 'card',
+      title: 'card',
+    },
+    {
+      category: 'forms',
+      icon: 'dfx-edt-angelo',
+      id: 'card',
+      title: 'card',
+    },
+    {
+      category: 'forms',
+      icon: 'dfx-edt-angelo',
+      id: 'tabs',
+      title: 'tabs',
     },
   ])
 
