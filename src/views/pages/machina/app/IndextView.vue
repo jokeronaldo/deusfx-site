@@ -26,7 +26,7 @@ const fezes = () => {
 
 <template>
   <div class="flex justify-evenly about">
-    <dfx-list
+    <dfx-list2
       @dfx-list-item-click="
         (event) => {
           router.push({ name: event.detail.routeName })
@@ -50,7 +50,7 @@ const fezes = () => {
           }"
         ></dfx-icon>
       </template>
-    </dfx-list>
+    </dfx-list2>
     <button @click="fezes">fezes</button>
     <machina-app> </machina-app>
   </div>
