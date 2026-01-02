@@ -26,6 +26,7 @@ const fezes = () => {
 
 <template>
   <div class="flex justify-evenly about">
+    <!--<dfx-dashboard />-->
     <dfx-list2
       @dfx-list-item-click="
         (event) => {
@@ -58,7 +59,7 @@ const fezes = () => {
 
 <style>
 body {
-  background-color: #000 !important;
+  background-color: gray !important;
 }
 @media (min-width: 1024px) {
   .about {
