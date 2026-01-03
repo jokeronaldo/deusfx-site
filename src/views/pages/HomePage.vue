@@ -66,7 +66,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
                   width="20px"
                 />
               </div>
-              <div class="text-sm">blueprint architecture</div>
+              <div class="text-sm">brand-new blueprints</div>
             </div>
             <div class="text-center text-xs text-blue-700">
               Clear layers split, minimalistic tests capable, simple but robust. Easy component
@@ -173,7 +173,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
               </div>
             </div>
             <div class="text-xs text-center text-blue-700">
-              You can create components, apps, pages obtaining professional results even unskilled.
+              Get professional results using MACHINA without coding.
             </div>
           </div>
           <div>
@@ -264,10 +264,13 @@ console.log(document.getElementById('get-started-home-button'), 888)
                 <strong>Demiurge architect board.</strong>
                 <br />
 
-                Complete deus<strong class="text-black">fx</strong> editor studio
+                Complete deusfx editor studio
               </div>
             </div>
-            <div class="w-full" style="line-height: 0"></div>
+            <div class="text-xs">
+              !00% free and no card required for community edition. Share your talent, show us what
+              you got!
+            </div>
           </div>
           <div>
             <div class="mb-2 outline-blue-700 flex flex-col items-center rounded text-blue-700">
@@ -288,7 +291,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
           </div>
         </div>
         <div class="flex flex-row justify-end leading-none text-sm">
-          made upon <i class="icon-lit"></i>
+          we are upon <i class="icon-lit"></i>
         </div>
       </div>
     </div>

@@ -15,12 +15,15 @@ const categories = computed(() => {
   })
 })
 
-const fezes = () => {
-  componentStore.categories.push({
+const addItem = () => {
+  componentStore.components.push({
+    category: 'whatever',
     icon: 'dfx-fmw-vue',
     id: 'dynamo',
     title: 'BOLAS',
   })
+
+  console.log(categories)
 }
 </script>
 
@@ -52,14 +55,14 @@ const fezes = () => {
         ></dfx-icon>
       </template>
     </dfx-list2>
-    <button @click="fezes">fezes</button>
+    <dfx-button variant="deus" @click="addItem">NOVO</dfx-button>
     <machina-app> </machina-app>
   </div>
 </template>
 
 <style>
 body {
-  background-color: gray !important;
+  background-color: black !important;
 }
 @media (min-width: 1024px) {
   .about {
