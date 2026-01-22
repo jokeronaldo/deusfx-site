@@ -8,7 +8,7 @@ import DeusFxLogo from '@/components/DeusFxLogo.vue'
       <div class="pl-2 pt-4">
         <DeusFxLogo width="100px" />
       </div>
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center mt-28">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,8 @@ import DeusFxLogo from '@/components/DeusFxLogo.vue'
           </div>
         </div>
       </div>
-      <div class="flex justify-center mb-4">
+      <div style="max-height: 1px"></div>
+      <div class="flex justify-center mb-4" v-if="false">
         <div class="flex justify-center mr-1 text-blue-700">auth<strong>or</strong></div>
         |
         <div class="flex justify-center ml-1 text-blue-700">te<strong>am</strong></div>

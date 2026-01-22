@@ -171,9 +171,18 @@ export const useComponentStore = defineStore('component', () => {
     },
   ])
 
+  function removeItem() {
+    //this.categories = this.categories.value.filter((item, key) => item)
+
+    components.value = Array.from(components.value).filter((item, key) => key !== 0)
+
+    console.log(components)
+  }
+
   return {
     active,
     categories,
     components,
+    removeItem,
   }
 })

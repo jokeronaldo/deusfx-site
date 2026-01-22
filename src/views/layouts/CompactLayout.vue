@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { animate } from 'motion'
 import { onMounted } from 'vue'
 import 'deusfx/src/components/dfx-card.ts'
 import { ref } from 'vue'

@@ -31,12 +31,15 @@ console.log(document.getElementById('get-started-home-button'), 888)
         <div class="text-center">
           <h1 class="mb-0">Web components</h1>
           <h1 class="mb-0">
-            <span style="color: blue">blueprint<strong></strong></span> architecture.
+            <span style="color: blue">blueprint<strong></strong></span> architecture
           </h1>
+          <div class="font-extralight mt-0 mb-6 atext-base">
+            with a <span class="font-light">mainframe</span> dedicated to control and customize
+            interfaces.
+          </div>
         </div>
-        <br />
         <div class="highlights">
-          <div>
+          <div class="mb-4">
             <div
               class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
             >
@@ -56,7 +59,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
               </div>
               <div class="flex">
                 <dfx-shape-line-printer
-                  v-for="(shape, index) in 7"
+                  v-for="(shape, index) in 3"
                   :key="index"
                   opacity="1"
                   color="rgba(0, 0, 255, 0.3)"
@@ -66,37 +69,11 @@ console.log(document.getElementById('get-started-home-button'), 888)
                   width="20px"
                 />
               </div>
-              <div class="text-sm">brand-new blueprints</div>
+              <div class="text-sm">blueprints</div>
             </div>
-            <div class="text-center text-xs text-blue-700">
-              Clear layers split, minimalistic tests capable, simple but robust. Easy component
-              interface changes
-            </div>
-          </div>
-          <div class="mb-6">
-            <div
-              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
-            >
-              <div class="mb-2 w-full flex justify-evenly">
-                <i class="icon-recycle" />
-              </div>
-              <div class="flex">
-                <dfx-shape-line-printer
-                  v-for="(shape, index) in 7"
-                  :key="index"
-                  opacity="1"
-                  color="rgba(0, 0, 255, 0.3)"
-                  :shape-colors="['black', 'blue']"
-                  :blend-mode="['normal']"
-                  :stroke-width="6"
-                  width="20px"
-                />
-              </div>
-              <div class="text-sm">reusability first</div>
-            </div>
-            <div class="text-center text-xs text-center text-blue-700">
-              Every component <strong class="text-blue-700">SHOULD</strong> runs everywhere. Better,
-              <strong class="text-blue-700">MUST</strong> be transportable across any tool
+            <div class="text-xs text-blue-700">
+              Component logic and interface uncoupled means easy structure portability and fast
+              prototyping.
             </div>
           </div>
           <div>
@@ -120,7 +97,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
                 </div>
                 <div class="flex">
                   <dfx-shape-line-printer
-                    v-for="(shape, index) in 7"
+                    v-for="(shape, index) in 3"
                     :key="index"
                     opacity="1"
                     color="rgba(0, 0, 255, 0.3)"
@@ -130,17 +107,128 @@ console.log(document.getElementById('get-started-home-button'), 888)
                     width="20px"
                   />
                 </div>
-                <div class="text-sm">runtime structure control</div>
+                <div class="text-sm">UI control</div>
               </div>
-              <div class="text-center text-xs text-blue-700">
-                Combining blueprint component with morphluid component you get smooth
-                transformations on UI
+              <div class="text-xs text-blue-700">
+                Build once, render everywhere! Adaptive render control running over
+                <span class="font-bold">Signals</span> nextgen reactivity
               </div>
             </div>
           </div>
           <div>
             <div
-              class="mb-2 p-4 outline-1 outline-blue-900 flex flex-col items-center rounded text-blue-700"
+              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
+            >
+              <div class="mb-2 w-full flex justify-evenly">
+                <dfx-geometric-icon
+                  icon="ssr"
+                  :grid="{
+                    slotHeight: '11px',
+                    slotWidth: '11px',
+                  }"
+                  :shapesOverride="{
+                    strokeColor: 'blue',
+                    strokeWidth: ['0.7px', '0.5px'],
+                    fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
+                  }"
+                />
+              </div>
+              <div class="flex">
+                <dfx-shape-line-printer
+                  v-for="(shape, index) in 1"
+                  :key="index"
+                  opacity="1"
+                  color="rgba(0, 0, 255, 0.3)"
+                  :shape-colors="['black', 'blue']"
+                  :blend-mode="['normal']"
+                  :stroke-width="6"
+                  width="20px"
+                />
+              </div>
+              <div class="text-sm">SSR</div>
+            </div>
+            <div class="text-xs text-blue-700">
+              <strong class="text-blue-700">ZERO-JS</strong> first render. Your layouts loads before
+              javascript. Get granular control over rendering..
+            </div>
+          </div>
+          <div>
+            <div
+              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
+            >
+              <div class="mb-2 items-center flex justify-center">
+                <dfx-geometric-icon
+                  icon="test"
+                  :grid="{
+                    slotHeight: '11px',
+                    slotWidth: '11px',
+                  }"
+                  :shapesOverride="{
+                    strokeColor: 'blue',
+                    strokeWidth: ['0.7px', '0.5px'],
+                    fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
+                  }"
+                />
+              </div>
+              <div class="flex">
+                <dfx-shape-line-printer
+                  v-for="(shape, index) in 7"
+                  :key="index"
+                  opacity="1"
+                  color="rgba(0, 0, 255, 0.2)"
+                  :shape-colors="['black', 'blue']"
+                  :blend-mode="['normal']"
+                  :stroke-width="6"
+                  width="20px"
+                />
+              </div>
+              <div class="text-sm">high-end components</div>
+            </div>
+            <div class="text-xs text-blue-700">
+              Not just a renderer, but also a complete UI toolkit delivering many out-of-box
+              high-end components.
+            </div>
+          </div>
+          <div class="mb-6">
+            <div
+              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
+            >
+              <div class="mb-2 w-full flex justify-evenly">
+                <dfx-geometric-icon
+                  icon="dfx-tkt-materials"
+                  :grid="{
+                    slotHeight: '11px',
+                    slotWidth: '11px',
+                  }"
+                  :shapesOverride="{
+                    strokeColor: 'blue',
+                    strokeWidth: ['0.7px', '0.5px'],
+                    fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
+                  }"
+                />
+              </div>
+              <div class="flex">
+                <dfx-shape-line-printer
+                  v-for="(shape, index) in 3"
+                  :key="index"
+                  opacity="1"
+                  color="rgba(0, 0, 255, 0.3)"
+                  :shape-colors="['black', 'blue']"
+                  :blend-mode="['normal']"
+                  :stroke-width="6"
+                  width="20px"
+                />
+              </div>
+              <div class="text-sm">materials</div>
+            </div>
+            <div class="text-xs text-blue-700">
+              Materials and decorations are available for quickly design results, even for
+              <span class="font-bold">non-deisgners.</span>
+            </div>
+          </div>
+          <div>
+            <div
+              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
             >
               <div class="mb-2 items-center flex justify-center">
                 <dfx-geometric-icon
@@ -150,7 +238,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
                     slotWidth: '11px',
                   }"
                   :shapesOverride="{
-                    strokeColor: 'black',
+                    strokeColor: 'blue',
                     strokeWidth: '1px',
                     fillColor: ['rgba(0, 0, 0, 0.02)', 'rgba(0, 0, 0, 0.05)'],
                   }"
@@ -172,75 +260,27 @@ console.log(document.getElementById('get-started-home-button'), 888)
                 <strong class="text-sm text-blue-700">non</strong>-programmer friendly
               </div>
             </div>
-            <div class="text-xs text-center text-blue-700">
-              Get professional results using MACHINA without coding.
-            </div>
-          </div>
-          <div>
-            <div
-              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
-            >
-              <div class="mb-2 items-center flex justify-center">
-                <i class="icon-web-components text-blue-500" />
-              </div>
-              <div class="flex">
-                <dfx-shape-line-printer
-                  v-for="(shape, index) in 7"
-                  :key="index"
-                  opacity="1"
-                  color="rgba(0, 0, 255, 0.2)"
-                  :shape-colors="['black', 'blue']"
-                  :blend-mode="['normal']"
-                  :stroke-width="6"
-                  width="20px"
-                />
-              </div>
-              <div class="text-sm">high-end components</div>
-            </div>
             <div class="text-xs text-blue-700">
-              No need of compile or package procecss. Include via CDN or download (package
-              available).
+              Get professional results using <strong class="text-blue-700">MACHINA</strong> without
+              coding. Dive into the next level of prototyping.
             </div>
           </div>
-          <div>
-            <div
-              class="mb-2 p-4 outline-1 outline-blue-700 flex flex-col items-center rounded text-blue-700"
-            >
-              <div class="mb-2 w-full flex justify-evenly">
-                <i class="icon-vue" />
-                <i class="icon-react" />
-                <i class="icon-angular" />
-                <i v-if="false" class="icon-svelte" />
-                <i class="icon-tailwind" />
-              </div>
-              <div class="flex">
-                <dfx-shape-line-printer
-                  v-for="(shape, index) in 4"
-                  :key="index"
-                  opacity="1"
-                  color="rgba(0, 0, 255, 0.3)"
-                  :shape-colors="['black', 'blue']"
-                  :blend-mode="['normal']"
-                  :stroke-width="6"
-                  width="20px"
-                />
-              </div>
-              <div class="text-sm">frameworks</div>
-            </div>
-            <div class="text-xs text-blue-700">
-              It's agnostic cross-everything, also, runs in vanilla javascript with ze<strong
-                class="text-blue-700"
-                >ro</strong
-              >
-              configuration (in almost cases).
-            </div>
-          </div>
-
           <div>
             <div class="h-[113px] mb-2 p-2 pt-4 flex flex-col items-center rounded border">
               <div class="flex flex-row mb-1">
                 <div>
-                  <i class="icon-machina" />
+                  <dfx-geometric-icon
+                    icon="dfx-tkt-machina"
+                    :grid="{
+                      slotHeight: '11px',
+                      slotWidth: '11px',
+                    }"
+                    :shapesOverride="{
+                      strokeColor: 'white',
+                      strokeWidth: '0.7px',
+                      fillColor: ['rgba(0, 0, 0, 0.5)', 'rgba(0, 0, 0, 1)', 'rgba(0, 0, 0, 0.7)'],
+                    }"
+                  />
                 </div>
                 <div class="flex flex-col h-full">
                   <div class="mb-1 pl-1 leading-[0.8] text-sm">
@@ -261,15 +301,15 @@ console.log(document.getElementById('get-started-home-button'), 888)
                 </div>
               </div>
               <div class="text-xs text-center">
-                <strong>Demiurge architect board.</strong>
+                <strong>demiurge architect board.</strong>
                 <br />
 
-                Complete deusfx editor studio
+                complete deusfx editor studio
               </div>
             </div>
             <div class="text-xs">
-              !00% free and no card required for community edition. Share your talent, show us what
-              you got!
+              <span class="font-medium">100% free and no cards required</span> for community
+              edition. Share your talent, show us what you got!
             </div>
           </div>
           <div>
@@ -279,6 +319,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
                   >started</span
                 ></dfx-button
               >
+              <div>OR</div>
               <dfx-button color="black" colorScheme="light" block variant="deus"
                 ><div style="--dfx-width: 100%">
                   <strong class="font-black text-white" size="md" block>go</strong>&nbsp;<span
@@ -341,8 +382,8 @@ console.log(document.getElementById('get-started-home-button'), 888)
 
 .icon-vue {
   display: inline-block;
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='rgba(0, 0, 255, 0.5)' d='M24.9 3.9L16 19.4L7.1 3.9H2l14 24.3L30 3.9z'/%3E%3Cpath fill='rgba(0, 0, 255, 0.5)' d='m16 9.5l-3.2-5.6H8.1L16 17.5l7.9-13.6h-4.6z'/%3E%3C/svg%3E");
@@ -453,7 +494,7 @@ console.log(document.getElementById('get-started-home-button'), 888)
   height: 32px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320' width='320px' height='320px' xmlns:bx='https://boxy-svg.com'%3E%3Cdefs%3E%3Cbx:grid x='0' y='0' width='82.381' height='82.381'/%3E%3C/defs%3E%3Cpath d='M 0 -320 L 320 0 L 0 0 L 0 -320 Z' bx:shape='triangle 0 -320 320 320 0 0 1@94fa6d03' style='stroke: rgb(0, 0, 0); fill: rgb(0, 0, 0);' transform='matrix(1, 0, 0, -1, 0, 0)'/%3E%3Cpath d='M 319.975 319.957 L 170 169.975 L 319.975 20 L 319.975 319.957 Z' style='stroke-linecap: square; paint-order: fill; stroke-width: 36.042; stroke-miterlimit: 1; fill: rgb(35, 0, 0);'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320' width='320px' height='320px' xmlns:bx='https://boxy-svg.com'%3E%3Cdefs%3E%3Cbx:grid x='0' y='0' width='82.381' height='82.381'/%3E%3C/defs%3E%3Cpath d='M 0 -320 L 320 0 L 0 0 L 0 -320 Z' bx:shape='triangle 0 -320 320 320 0 0 1@94fa6d03' style='stroke: rgb(0, 0, 0); fill: transparent;' transform='matrix(1, 0, 0, -1, 0, 0)'/%3E%3Cpath d='M 319.975 319.957 L 170 169.975 L 319.975 20 L 319.975 319.957 Z' style='stroke-linecap: square; paint-order: fill; stroke-width: 36.042; stroke-miterlimit: 1; fill: transparent;'/%3E%3C/svg%3E");
 }
 
 .icon-web-components {

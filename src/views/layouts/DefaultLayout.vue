@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { motion } from 'motion-v'
 import { computed, onMounted, shallowRef, watch } from 'vue'
 import { useLayoutStore } from '@/stores/layout'
 import blocks from '@/views/blocks/proses'
