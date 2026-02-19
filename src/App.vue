@@ -3,7 +3,9 @@ import { onMounted, shallowRef } from 'vue'
 import { RouterView, useRoute, useRouter } from 'vue-router'
 import layouts from '@/views/layouts/layouts'
 import { useLayoutStore } from '@/stores/layout'
-
+import { cssDecoration } from '../../deusfx/src/deusfx/css/decoration'
+import { cssSize } from '../../deusfx/src/deusfx/css/size'
+import { cssColorscheme } from '../../deusfx/src/deusfx/css/colorscheme'
 const layout = shallowRef('div')
 
 // Composables
@@ -24,6 +26,13 @@ onMounted(() => {
   if (!layoutStore.template) {
     layoutStore.template = 'LayoutDefault'
   }
+
+  const sheet = new CSSStyleSheet()
+  sheet.replaceSync(cssDecoration.cssText)
+  sheet.replaceSync(cssSize.cssText)
+  sheet.replaceSync(cssColorscheme.cssText)
+
+  document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet]
 })
 </script>
 
