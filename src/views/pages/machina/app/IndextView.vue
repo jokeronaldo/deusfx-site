@@ -73,7 +73,7 @@ onMounted(() => {
 
 <template>
   <div class="flex justify-evenly about">
-    <dfx-drawer .active="drawerActive">
+    <dfx-drawer :is-active="drawerActive" @update="drawerActive = $event.detail.value">
       <dfx-button @click="drawerActive = drawerActive === 'off' ? 'on' : 'off'"
         >drawer {{ drawerActive }}</dfx-button
       >
@@ -153,14 +153,14 @@ onMounted(() => {
       <dfx-switch
         size="md"
         ref="swtref"
-        .is-active="data?.colorScheme"
-        @click="
-          () => {
-            colorScheme = colorScheme === 'light' ? 'dark' : 'light'
-            console.log('123', colorScheme)
+        :is-active="data?.zumba"
+        :style="`--colorscheme: ${colorScheme === 'light' ? 'dark' : 'light'}`"
+        @update="
+          ($event) => {
+            console.log($event, 'doenca')
+            data.zumba = $event.detail.value
           }
         "
-        :style="`--colorscheme: ${colorScheme}`"
       ></dfx-switch>
     </div>
     <div class="p-2">
