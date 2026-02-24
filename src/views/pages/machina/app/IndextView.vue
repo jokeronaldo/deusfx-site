@@ -43,6 +43,76 @@ console.log(JSON.stringify(this))
 //}, 5000)
 const swtref = ref()
 const overref = ref()
+const lesser = ref([
+  {
+    title: 'dropdown',
+    id: 'ddalt',
+    description: 'adh dasd iashDASHDASUHDHASHud',
+  },
+  {
+    title: 'data table',
+    id: 'data table',
+  },
+])
+const ddOptions = ref([
+  {
+    title: 'dropdown',
+    id: 'dropdown',
+  },
+  {
+    title: 'data table',
+    id: 'data table',
+  },
+  {
+    title: 'table',
+    id: 'table',
+  },
+  {
+    title: 'grid',
+    id: 'grid',
+  },
+  {
+    title: 'panel',
+    id: 'panel',
+  },
+  {
+    title: 'popover',
+    id: 'popover',
+  },
+  {
+    title: 'navigation menu',
+    id: 'navigation menu',
+  },
+  {
+    title: 'context menu',
+    id: 'context menu',
+  },
+  {
+    title: 'pallete swatch',
+    id: 'pallete swatch',
+  },
+  {
+    title: 'droppable container',
+    id: 'droppable container',
+  },
+  {
+    title: 'chip',
+    id: 'chip',
+  },
+  {
+    title: 'divider',
+    id: 'divider',
+  },
+  {
+    title: 'badge',
+    id: 'badge',
+  },
+  {
+    title: 'padgination',
+    id: 'padgination',
+  },
+])
+
 const data = reactive({
   zumba: 'off',
   messages: [
@@ -74,10 +144,11 @@ onMounted(() => {
 <template>
   <div class="flex justify-evenly about">
     <dfx-drawer :is-active="drawerActive" @update="drawerActive = $event.detail.value">
-      <dfx-button @click="drawerActive = drawerActive === 'off' ? 'on' : 'off'"
-        >drawer {{ drawerActive }}</dfx-button
-      >
       TESTE
+      <br />
+      <br />
+      <br />
+      <dfx-button variant="deus" @click="data.zumba = 'on'">win</dfx-button>
     </dfx-drawer>
     <!-- Para Vue 3 com Custom Elements -->
     <div style="width: 400px; height: 50px">
@@ -85,6 +156,14 @@ onMounted(() => {
         <dfx-input value="" />
       </div>
       <dfx-alert material="none">asdasasd</dfx-alert>
+      <div class="p-2">
+        <dfx-accordion .items="lesser" />
+        <dfx-dropdown :options="ddOptions" />
+      </div>
+      <dfx-range />
+      <dfx-tooltip text="teste 123"
+        ><div>ola<br /><br />AAAAAA<br />BBb</div></dfx-tooltip
+      >
       <div class="p-2">
         <dfx-tab
           height="50px"
@@ -167,80 +246,7 @@ onMounted(() => {
       <dfx-checkbox />
     </div>
     <dfx-button variant="pill" @click="listSwitch()">switch {{ orientation }}</dfx-button>
-    <dfx-list
-      selectable
-      :orientation="orientation"
-      .items="[
-        {
-          title: 'dropdown',
-          id: 'dropdown',
-        },
-        {
-          title: 'data table',
-          id: 'data table',
-        },
-        {
-          title: 'table',
-          id: 'table',
-        },
-        {
-          title: 'acordion',
-          id: 'acordion',
-        },
-        {
-          title: 'slider',
-          id: 'slider',
-        },
-        {
-          title: 'grid',
-          id: 'grid',
-        },
-        {
-          title: 'panel',
-          id: 'panel',
-        },
-        {
-          title: 'popover',
-          id: 'popover',
-        },
-        {
-          title: 'tooltip',
-          id: 'tooltip',
-        },
-        {
-          title: 'navigation menu',
-          id: 'navigation menu',
-        },
-        {
-          title: 'context menu',
-          id: 'context menu',
-        },
-        {
-          title: 'pallete swatch',
-          id: 'pallete swatch',
-        },
-        {
-          title: 'droppable container',
-          id: 'droppable container',
-        },
-        {
-          title: 'chip',
-          id: 'chip',
-        },
-        {
-          title: 'divider',
-          id: 'divider',
-        },
-        {
-          title: 'badge',
-          id: 'badge',
-        },
-        {
-          title: 'padgination',
-          id: 'padgination',
-        },
-      ]"
-    ></dfx-list>
+    <dfx-list selectable :orientation="orientation" :items="ddOptions"></dfx-list>
     <dfx-list .items="categories" selectable ref="listd"></dfx-list>
 
     <dfx-button variant="deus" @click="data.zumba = 'on'">RESET</dfx-button>
