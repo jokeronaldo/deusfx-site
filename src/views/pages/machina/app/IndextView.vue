@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router'
 import { useComponentStore } from '@/stores/component'
 import { $notify } from '../../../../../../deusfx/src/deusfx/components/singleton/index'
 import { randomNumber } from '../../../../../../deusfx/src/deusfx/core/deusfx.helpers'
+import { cssColorscheme } from '../../../../../../deusfx/src/deusfx/css/colorscheme'
 
 const router = useRouter()
 const componentStore = useComponentStore()
@@ -130,11 +131,14 @@ const data = reactive({
 })
 const zica = ref(false)
 const drawerActive = ref('on')
-const colorScheme = ref('dark')
+//const colorScheme = ref('dark')
 
 //setTimeout(() => (data.zumba = 'on'), 1000)
 
 onMounted(() => {
+  const style = document.createElement('style')
+  style.textContent = cssColorscheme.cssText
+  document.head.appendChild(style)
   //$notify.send({
   //  message: 'Teste',
   //})
@@ -148,10 +152,22 @@ onMounted(() => {
       <br />
       <br />
       <br />
-      <dfx-button variant="deus" @click="data.zumba = 'on'">win</dfx-button>
+      <dfx-light-bulb></dfx-light-bulb>
     </dfx-drawer>
     <!-- Para Vue 3 com Custom Elements -->
     <div style="width: 400px; height: 50px">
+      <div>
+        <dfx-button variant="deus">asd</dfx-button>
+        <dfx-button variant="link">asd</dfx-button>
+        <dfx-button variant="pill">asd</dfx-button>
+        <dfx-button variant="ghost">asd</dfx-button>
+        <dfx-button variant="outline">asd</dfx-button>
+        <dfx-button variant="flat">asd</dfx-button>
+        <dfx-button variant="duo-tone">asd</dfx-button>
+        <dfx-button variant="material" material="mosaic">asd</dfx-button>
+        <!--
+        -->
+      </div>
       <div class="p-2">
         <dfx-input value="" />
       </div>
@@ -233,7 +249,6 @@ onMounted(() => {
         size="md"
         ref="swtref"
         :is-active="data?.zumba"
-        :style="`--colorscheme: ${colorScheme === 'light' ? 'dark' : 'light'}`"
         @update="
           ($event) => {
             console.log($event, 'doenca')
@@ -256,12 +271,6 @@ onMounted(() => {
 </template>
 
 <style>
-@layer colorscheme {
-  :host,
-  :root {
-    --colorscheme: v-bind(colorScheme);
-  }
-}
 body {
   background-color: var(--colorscheme-hex) !important;
 }
