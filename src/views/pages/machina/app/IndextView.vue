@@ -23,10 +23,8 @@ const addItem = () => {
     category: 'whatever',
     icon: 'dfx-fmw-vue',
     id: 'dynamo',
-    title: 'BOLAS',
+    text: 'BOLAS',
   })
-
-  console.log(categories)
 }
 
 const listSwitch = () => {
@@ -36,7 +34,6 @@ const listSwitch = () => {
 const orientation = ref()
 const open = ref(false)
 const listd = ref()
-console.log(JSON.stringify(this))
 
 //setTimeout(() => {
 //  componentStore.components[2].icon = 'dfx-cmp-navigation'
@@ -46,70 +43,81 @@ const swtref = ref()
 const overref = ref()
 const lesser = ref([
   {
-    title: 'dropdown',
+    text: 'dropdown',
+    value: 'ddalt',
     id: 'ddalt',
     description: 'adh dasd iashDASHDASUHDHASHud',
   },
   {
-    title: 'data table',
-    id: 'data table',
+    text: 'data table',
+    value: 'datatable',
+    id: 'datatable',
   },
 ])
 const ddOptions = ref([
   {
-    title: 'dropdown',
+    text: 'dropdown',
+    value: 'dropdown',
     id: 'dropdown',
   },
   {
-    title: 'data table',
-    id: 'data table',
+    text: 'data table',
+    value: 'datatable',
+    id: 'datatable',
   },
   {
-    title: 'table',
+    text: 'table',
+    value: 'table',
     id: 'table',
   },
   {
-    title: 'grid',
+    text: 'grid',
+    value: 'grid',
     id: 'grid',
   },
   {
-    title: 'panel',
+    text: 'panel',
+    value: 'panel',
     id: 'panel',
   },
   {
-    title: 'popover',
+    text: 'popover',
+    value: 'popover',
     id: 'popover',
   },
   {
-    title: 'navigation menu',
-    id: 'navigation menu',
+    text: 'navigation menu',
+    value: 'navigationmenu',
+    id: 'navigationmenu',
   },
   {
-    title: 'context menu',
-    id: 'context menu',
+    text: 'context menu',
+    value: 'contextmenu',
+    id: 'contextmenu',
   },
   {
-    title: 'pallete swatch',
-    id: 'pallete swatch',
+    text: 'pallete swatch',
+    value: 'palleteswatch',
+    id: 'palleteswatch',
   },
   {
-    title: 'droppable container',
-    id: 'droppable container',
+    text: 'droppable container',
+    value: 'droppablecontainer',
+    id: 'droppablecontainer',
   },
   {
-    title: 'chip',
+    text: 'chip',
+    value: 'chip',
     id: 'chip',
   },
   {
-    title: 'divider',
+    text: 'divider',
+    value: 'divider',
     id: 'divider',
   },
   {
-    title: 'badge',
-    id: 'badge',
-  },
-  {
-    title: 'padgination',
+    text: 'padgination',
+    value: 'padgination',
     id: 'padgination',
   },
 ])
@@ -147,7 +155,11 @@ onMounted(() => {
 
 <template>
   <div class="flex justify-evenly about">
-    <dfx-drawer :is-active="drawerActive" @update="drawerActive = $event.detail.value">
+    <dfx-drawer
+      draggable="false"
+      :is-active="drawerActive"
+      @update="drawerActive = $event.detail.value"
+    >
       TESTE
       <br />
       <br />
@@ -157,29 +169,39 @@ onMounted(() => {
     <!-- Para Vue 3 com Custom Elements -->
     <div style="width: 400px; height: 50px">
       <div>
-        <dfx-button variant="deus">asd</dfx-button>
-        <dfx-button variant="link">asd</dfx-button>
-        <dfx-button variant="pill">asd</dfx-button>
-        <dfx-button variant="ghost">asd</dfx-button>
-        <dfx-button variant="outline">asd</dfx-button>
-        <dfx-button variant="flat">asd</dfx-button>
-        <dfx-button variant="duo-tone">asd</dfx-button>
-        <dfx-button variant="material" material="mosaic">asd</dfx-button>
+        <dfx-button variant="deus">deus</dfx-button>
+        <dfx-button variant="link">link</dfx-button>
+        <dfx-button color="red" variant="pill" text-color="white">pill</dfx-button>
+        <dfx-button variant="ghost">ghost</dfx-button>
+        <dfx-button variant="outline" dfx-draggable="yes">outline</dfx-button>
+        <dfx-button variant="flat">flat</dfx-button>
+        <dfx-button variant="duo-tone" dfx-draggable="yes">duo-tone</dfx-button>
+        <dfx-button variant="material" material="mosaic" dfx-draggable="yes" text-color="white"
+          >material</dfx-button
+        >
         <!--
         -->
       </div>
       <div class="p-2">
-        <dfx-input value="" />
+        <dfx-input value="" dfx-draggable="yes" />
       </div>
-      <dfx-alert material="none">asdasasd</dfx-alert>
+      <dfx-alert material="none" variant="warning" container="yes" dfx-draggable="yes"
+        >asdasasd</dfx-alert
+      >
       <div class="p-2">
         <dfx-accordion .items="lesser" />
-        <dfx-dropdown :options="ddOptions" />
+        <dfx-dropdown .options="ddOptions" dfx-draggable="yes" multiple="yes" />
       </div>
       <dfx-range />
-      <dfx-tooltip text="teste 123"
-        ><div>ola<br /><br />AAAAAA<br />BBb</div></dfx-tooltip
-      >
+      <div class="p-10">
+        <dfx-tooltip text="teste 123"
+          ><div>
+            ola<br /><br />AAAAAA<br /><dfx-badge positionVertical="bottom" dfx-draggable="yes"
+              ><dfx-button variant="deus" draggable="false">BADGE</dfx-button></dfx-badge
+            >
+          </div></dfx-tooltip
+        >
+      </div>
       <div class="p-2">
         <dfx-tab
           height="50px"
@@ -187,15 +209,15 @@ onMounted(() => {
           :items="[
             {
               id: 'button-spec',
-              title: 'spec',
+              text: 'spec',
             },
             {
               id: 'button-api',
-              title: 'api',
+              text: 'api',
             },
             {
               id: 'button-blueprints',
-              title: 'blueprints',
+              text: 'blueprints',
             },
           ]"
         />
@@ -204,7 +226,7 @@ onMounted(() => {
         <dfx-button
           @click="
             $notify.send({
-              title: 'teste ok de titulos para testes maiores do que o normal e ainda maior ainda',
+              text: 'teste ok de titulos para testes maiores do que o normal e ainda maior ainda',
               message: data.messages[randomNumber('0', '2')],
             })
           "
@@ -220,6 +242,7 @@ onMounted(() => {
       @on-close="data.zumba = 'off'"
       ref="overref"
       persistent="off"
+      style="--overlay-z-index: 1101"
     >
       <dfx-template slot="default">
         <dfx-window style="color: white" no-styles="off">
@@ -242,16 +265,16 @@ onMounted(() => {
       </dfx-template>
     </dfx-overlay>
     <div class="p-2">
-      <dfx-radio size="md" />
+      <dfx-radio size="md" dfx-draggable="yes" />
     </div>
     <div class="p-2">
       <dfx-switch
+        dfx-draggable="yes"
         size="md"
         ref="swtref"
         :is-active="data?.zumba"
         @update="
           ($event) => {
-            console.log($event, 'doenca')
             data.zumba = $event.detail.value
           }
         "
