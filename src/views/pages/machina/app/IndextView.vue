@@ -155,11 +155,7 @@ onMounted(() => {
 
 <template>
   <div class="flex justify-evenly about">
-    <dfx-drawer
-      draggable="false"
-      :is-active="drawerActive"
-      @update="drawerActive = $event.detail.value"
-    >
+    <dfx-drawer :is-active="drawerActive" @update="drawerActive = $event.detail.value">
       TESTE
       <br />
       <br />
@@ -169,6 +165,7 @@ onMounted(() => {
     <!-- Para Vue 3 com Custom Elements -->
     <div style="width: 400px; height: 50px">
       <div>
+        <dfx-chip>ADASDSA</dfx-chip>
         <dfx-button variant="deus">deus</dfx-button>
         <dfx-button variant="link">link</dfx-button>
         <dfx-button color="red" variant="pill" text-color="white">pill</dfx-button>
