@@ -138,7 +138,7 @@ const data = reactive({
   ],
 })
 const zica = ref(false)
-const drawerActive = ref('on')
+const drawerActive = ref('yes')
 //const colorScheme = ref('dark')
 
 //setTimeout(() => (data.zumba = 'on'), 1000)
@@ -155,8 +155,16 @@ onMounted(() => {
 
 <template>
   <div class="flex justify-evenly about">
-    <dfx-drawer :is-active="drawerActive" @update="drawerActive = $event.detail.value">
-      TESTE
+    <dfx-drawer
+      :is-active="drawerActive"
+      @update="
+        ($event) => {
+          console.log($event.detail, 'XXXX999')
+          drawerActive = $event.detail.value
+        }
+      "
+    >
+      {{ drawerActive }}TESTE
       <br />
       <br />
       <br />
@@ -229,8 +237,8 @@ onMounted(() => {
           "
           >Nova notify</dfx-button
         >
-        <dfx-button @click="drawerActive = drawerActive === 'off' ? 'on' : 'off'"
-          >drawer {{ drawerActive }}</dfx-button
+        <dfx-button @click="drawerActive = drawerActive === 'no' ? 'yes' : 'no'"
+          >drawer {{ drawerActive }} - {{ drawerActive.value }}</dfx-button
         >
       </div>
     </div>
