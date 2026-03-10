@@ -123,7 +123,7 @@ const ddOptions = ref([
 ])
 
 const data = reactive({
-  zumba: 'off',
+  zumba: 'no',
   messages: [
     `nova not ouaHDUhash hdiah ihdaishidhias
         oiaSHDasHIUDH uiashiu hiudsahiuhdiu hasidhiashi dha
@@ -138,7 +138,7 @@ const data = reactive({
   ],
 })
 const zica = ref(false)
-const drawerActive = ref('yes')
+const drawerActive = ref('no')
 //const colorScheme = ref('dark')
 
 //setTimeout(() => (data.zumba = 'on'), 1000)
@@ -164,7 +164,9 @@ onMounted(() => {
         }
       "
     >
-      {{ drawerActive }}TESTE
+      <dfx-button @click="drawerActive = drawerActive === 'no' ? 'yes' : 'no'">
+        {{ drawerActive }}TESTE
+      </dfx-button>
       <br />
       <br />
       <br />
@@ -201,7 +203,7 @@ onMounted(() => {
       <div class="p-10">
         <dfx-tooltip text="teste 123"
           ><div>
-            ola<br /><br />AAAAAA<br /><dfx-badge positionVertical="bottom" dfx-draggable="yes"
+            ola<br /><br />AAAAAA<br /><dfx-badge position="center right" dfx-draggable="yes"
               ><dfx-button variant="deus" draggable="false">BADGE</dfx-button></dfx-badge
             >
           </div></dfx-tooltip
@@ -244,30 +246,28 @@ onMounted(() => {
     </div>
     <dfx-overlay
       :is-active="data?.zumba"
-      @on-close="data.zumba = 'off'"
+      @close="data.zumba = 'no'"
       ref="overref"
-      persistent="off"
+      persistent="no"
       style="--overlay-z-index: 1101"
+      channel="window-x"
     >
-      <dfx-template slot="default">
-        <dfx-window style="color: white" no-styles="off">
-          <dfx-template slot="title">eu sou title</dfx-template>
-          <dfx-template slot="default">
-            <div style="padding: 8px; margin-bottom: 8px">
-              <dfx-input value="" />
-            </div>
-            <div style="padding: 8px; margin-bottom: 8px">
-              <dfx-input value="" />
-            </div>
-            <div style="padding: 8px; margin-bottom: 8px">
-              <dfx-textarea value="" />
-            </div>
-            <div style="padding: 8px; margin-bottom: 8px">
-              <dfx-input value="" />
-            </div>
-          </dfx-template>
-        </dfx-window>
-      </dfx-template>
+      <dfx-window style="color: white" channel="window-x">
+        <dfx-template>
+          <div style="padding: 8px; margin-bottom: 8px">
+            <dfx-input value="" />
+          </div>
+          <div style="padding: 8px; margin-bottom: 8px">
+            <dfx-input value="" />
+          </div>
+          <div style="padding: 8px; margin-bottom: 8px">
+            <dfx-textarea value="" />
+          </div>
+          <div style="padding: 8px; margin-bottom: 8px">
+            <dfx-input value="" />
+          </div>
+        </dfx-template>
+      </dfx-window>
     </dfx-overlay>
     <div class="p-2">
       <dfx-radio size="md" dfx-draggable="yes" />
@@ -289,8 +289,16 @@ onMounted(() => {
       <dfx-checkbox />
     </div>
     <dfx-button variant="pill" @click="listSwitch()">switch {{ orientation }}</dfx-button>
-    <dfx-list selectable :orientation="orientation" :items="ddOptions"></dfx-list>
-    <dfx-list .items="categories" selectable ref="listd"></dfx-list>
+    <div class="p-4">
+      <dfx-menu .options="ddOptions"></dfx-menu>
+      <dfx-list
+        selectable="yes"
+        multiple="no"
+        :orientation="orientation"
+        :items="ddOptions"
+      ></dfx-list>
+    </div>
+    <dfx-list .items="categories" selectable="yes" ref="listd"></dfx-list>
 
     <dfx-button variant="deus" @click="data.zumba = 'on'">RESET</dfx-button>
     <dfx-button variant="deus" @click="addItem">NOVO</dfx-button>
